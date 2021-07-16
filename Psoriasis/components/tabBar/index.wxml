@@ -1,0 +1,6 @@
+<view class="tabBar" style="{{isIphoneX ? 'margin-bottom:50rpx;':'' }}">
+    <view class="tabBar_item" wx:for="{{results}}" data-id="{{index}}" catch:tap="changeTabBar" wx:key="id" data-url="{{item.url}}">
+        <image class="icon" src="{{active === index ? item.selected_image :item.image}}" />
+        <view class="font {{active === index ? 'active' :' '}}">{{item.name}}</view>
+    </view>
+</view>

@@ -1,0 +1,4 @@
+<view class="title">
+    <view class="title_interval"></view>
+    <view class="title_font">{{item}}</view>
+</view>

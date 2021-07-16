@@ -1,0 +1,65 @@
+<login showLoginForm="{{showLogin}}" bind:loginSuccess="loginSuccess" />
+<view class="page">
+    <view class="container">
+        <!-- 广告弹窗 -->
+        <view class="activity-mask" wx:if="{{showAd}}">
+            <image class="adImg" src="{{free_clinic_open[0].image}}">
+                <view class="close">
+                    <view class="">{{time}}</view>
+                </view>
+            </image>
+        </view>
+        <view class="banner">
+            <swiper class="indexBanner" indicator-color="#83cdb2" indicator-active-color="#0A9E67" circular="true" indicator-dots="true" autoplay="{{true}}" circular="true" easing-function="linear" current="{{index}}">
+                <swiper-item class="imgBox" wx:for="{{free_clinic_rotation}}" wx:key="index">
+                    <image class="banner-image" src="{{item.image}}" mode="widthFix" bindtap="toBanner" data-id="{{item.id}}" data-url="{{item.image}}" data-type="{{1}}"></image>
+                </swiper-item>
+            </swiper>
+        </view>
+        <block style="margin:0 auto;">
+            <view style="margin:30rpx 0rpx 36rpx 0rpx">
+                <title item="义诊预约" />
+            </view>
+            <!-- 义诊预约 -->
+            <view class="subscribe">
+                <view class="subscribe_time">
+                    <view class="subscribe_start">
+                        <view class="subscribe_startL">义诊时间</view>
+                        <view class="subscribe_startR">义诊进行时间: {{start_time_format}}</view>
+                    </view>
+                    <view class="subscribe_end">
+                        <view class="subscribe_endL">截止时间</view>
+                        <view class="subscribe_endR">预约截止时间: {{ enroll_end_time_format}}</view>
+                    </view>
+                </view>
+                <!-- <view class="subscribe_phone">
+                    <view class="serverFont">
+                        <view class="serverFont_top">客服电话</view>
+                        <view class="serverFont_bom" bind:tap="call">点击拨打</view>
+                    </view>
+                    <view class="serverPhone">{{phone}}</view>
+                </view> -->
+            </view>
+            <!-- 名医介绍 -->
+            <view style="margin-top:36rpx;" class="titleBox" bind:tap="toPage" data-id="1">
+                <title item="名医介绍" />
+                <image class="img" src="../../../images/you.png"></image>
+            </view>
+            <!-- 报名须知 -->
+            <view style="margin-top:36rpx;" class="titleBox" bind:tap="toPage" data-id="2">
+                <title item="义诊须知" />
+                <image class="img" src="../../../images/you.png"></image>
+            </view>
+            <!-- bind:tap="toSubscribe" -->
+            <!-- style="margin-bottom:140rpx;" -->
+            <view class="y_yBox" bind:tap="toSubscribe" wx:if="{{!isDisabled}}">
+                <view class="y_yBtn">{{btn_text}}</view>
+            </view>
+            <view class="y_yBox" bind:tap="toSubscribe" style="background:#ccc;" wx:else>
+                <view class="y_yBtn">{{btn_text}}</view>
+            </view>
+            <!-- <view style="width:100%;height:100rpx;"></view> -->
+        </block>
+    </view>
+    <!-- <tabBar active="{{2}}" /> -->
+</view>

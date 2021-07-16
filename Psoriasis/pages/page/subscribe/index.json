@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "义诊预约",
+  "enablePullDownRefresh": false,
+
+  "usingComponents": {
+    "van-popup": "@vant/weapp/popup/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-action-sheet": "@vant/weapp/action-sheet/index",
+    "van-checkbox": "@vant/weapp/checkbox/index",
+    "van-checkbox-group": "@vant/weapp/checkbox-group/index",
+    "van-uploader": "@vant/weapp/uploader/index"
+  }
+}

@@ -1,0 +1,34 @@
+.container {
+  margin: 40rpx auto;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  width: 686rpx;
+  height: 255rpx;
+  background: #FFFFFF;
+  border-radius: 32rpx;
+  box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-family: PingFangSC-Regular, PingFang SC;
+}
+.container .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .top .font {
+  font-size: 26rpx;
+  color: #666666;
+}
+.container .top .hightline {
+  color: #0A9E67;
+}
+.container .content {
+  font-size: 32rpx;
+  color: #333333;
+}
+.container .bottom {
+  font-size: 26rpx;
+  color: #666666;
+}

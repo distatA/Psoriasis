@@ -1,0 +1,14 @@
+/* pages/page/moments/index.wxss */
+.img-box{
+  display: grid;
+  padding:20rpx 10rpx;
+  grid-template-columns: 350rpx 350rpx;
+  grid-template-rows: 350rpx 350rpx;
+  grid-row-gap: 25rpx;
+  grid-column-gap: 20rpx
+}
+.img-item image{
+  width: 100%;
+  height: 100%;
+
+}

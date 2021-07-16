@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "活动周",
+  "enablePullDownRefresh": false,
+
+  "usingComponents": {
+    "van-empty": "@vant/weapp/empty/index"
+  }
+}

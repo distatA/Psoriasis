@@ -1,0 +1,213 @@
+.page {
+  padding: 0 40rpx;
+  font-family: PingFangSC-Medium, PingFang SC;
+  background-color: #fff;
+  height: 100vh;
+  overflow: hidden;
+
+
+}
+
+.container .banner {
+  width: 686rpx;
+  height: 343rpx;
+  margin: 0 auto;
+  margin-top: 50rpx;
+  /* margin-right: 8rpx !important; */
+
+}
+
+.indexBanner {
+  margin-right: 10rpx;
+}
+
+.container .banner .imgBox {
+  width: 686rpx;
+  height: 100%;
+  border-radius: 18rpx;
+}
+
+.container .banner .banner-image {
+  width: 686rpx;
+  height: 100% !important;
+}
+
+.container {
+  /* pages/index/index.wxss */
+}
+
+.container .banner {
+  width: 686rpx;
+  height: 344rpx;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  border-radius: 30rpx;
+}
+
+.container .tipsBpx {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 999;
+  background-color: pink;
+}
+
+.container .subscribe_time {
+  background-color: #f6f6f6 !important;
+  margin: 25rpx 0;
+  box-sizing: border-box;
+  width: 670rpx;
+  height: 168rpx;
+  padding: 42rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container .subscribe_time .subscribe_start {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #666666;
+}
+
+.container .subscribe_time .subscribe_start .subscribe_startL {
+  font-size: 28rpx;
+  font-weight: 500;
+}
+
+.container .subscribe_time .subscribe_start .subscribe_startR {
+  font-size: 26rpx;
+}
+
+.container .subscribe_time .subscribe_end {
+  margin-top: 7rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #666666;
+}
+
+.container .subscribe_time .subscribe_end .subscribe_endL {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #0A9E67;
+}
+
+.container .subscribe_time .subscribe_end .subscribe_endR {
+  font-size: 26rpx;
+}
+
+.container .subscribe_phone {
+  background-color: #f6f6f6 !important;
+  box-sizing: border-box;
+  width: 670rpx;
+  height: 168rpx;
+  padding: 42rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.container .subscribe_phone .serverFont {
+  width: 120rpx;
+  height: 90rpx;
+  color: #333333;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.container .subscribe_phone .serverFont .serverFont_top {
+  font-size: 28rpx;
+  font-weight: 500;
+}
+
+.container .subscribe_phone .serverFont .serverFont_bom {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #0A9E67;
+}
+
+.container .subscribe_phone .serverPhone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  height: 120rpx;
+  font-size: 32rpx;
+  color: #666666;
+}
+
+.container .y_yBox {
+  width: 655rpx;
+  height: 104rpx;
+  background: #0A9E67;
+  border-radius: 51rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: fixed;
+  left: 50%;
+  bottom: 60rpx;
+  /* bottom: 170rpx; */
+
+  transform: translate(-50%, 0);
+  /* margin-top: 78rpx; */
+}
+
+.container .y_yBox .y_yBtn {
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.container .titleBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .titleBox .img {
+  width: 16px;
+  height: 16px;
+  margin-right: 10rpx;
+}
+
+.container .activity-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 3;
+}
+
+.container .adImg {
+  position: relative;
+  width: 630rpx;
+  height: 834rpx;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30rpx;
+}
+
+.container .close {
+  background: rgba(0, 0, 0, 0.7);
+  width: 70rpx;
+  height: 70rpx;
+  position: absolute;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 22rpx;
+  top: 80rpx;
+  transform: translate(-50%, -50%);
+}

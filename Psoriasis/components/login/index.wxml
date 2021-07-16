@@ -1,0 +1,13 @@
+<view class="login-back" wx:if="{{showLoginForm}}">
+    <view class="login">
+        <view class="login-img">您还未登录</view>
+        <view class="caozuo">请先登录再进行操作</view>
+        <image class="tupian" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1575608298886&di=3da24886f5a661027cb470b731a4f264&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201704%2F27%2F20170427155254_Kctx8.thumb.700_0.jpeg"></image>
+        <view class="zandenglu">
+            <button class="btnNo" type="warn" bindtap="showLoginForm">暂不登录</button>
+            <button class="btnGo" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">
+                立即登录
+            </button>
+        </view>
+    </view>
+</view>

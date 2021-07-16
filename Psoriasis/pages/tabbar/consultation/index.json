@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "赞助展区",
+  "enablePullDownRefresh": false,
+
+  "usingComponents": {
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index",
+    "tabBar": "/components/tabBar/index",
+    "van-empty": "@vant/weapp/empty/index"
+
+
+  }
+}

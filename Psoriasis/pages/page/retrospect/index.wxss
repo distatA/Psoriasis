@@ -1,0 +1,103 @@
+/* 校园风光 */
+
+.ad_box {
+    white-space: nowrap;
+    width: 100%;
+}
+
+.ad_item {
+    display: inline-block;
+    /* width: 328rpx;
+    height: 246rpx; */
+    width: 243rpx;
+    height: 132rpx;
+    border-radius: 30rpx;
+    margin-right: 30rpx;
+    background-color: #CECECE;
+}
+
+.school_scenery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.school_scenery .scenery_content {
+    width: 328rpx;
+    height: 246rpx;
+    margin-bottom: 24rpx;
+    background-color: #D8D8D8;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.school_scenery .scenery_content image {
+    position: relative;
+    width: 328rpx;
+    height: 246rpx;
+}
+
+.container .nav {
+    width: 100%;
+    height: 100rpx;
+    display: flex;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #fff;
+}
+
+.container .nav_v {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .nav_active {
+    color: #333333 !important;
+}
+
+.container .nav_title {
+    width: 100%;
+    text-align: center;
+    line-height: 80rpx;
+    flex: 1;
+    font-size: 28rpx;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #999999;
+    text-shadow: 0px 1rpx 27rpx rgba(0, 0, 0, 0.05);
+}
+
+.container .nav_hr {
+    position: absolute;
+    bottom: 0%;
+    left: auto;
+    width: 120rpx;
+    height: 6rpx;
+    background: #0A9E67;
+    box-shadow: 0px 1rpx 27rpx 0px rgba(0, 0, 0, 0.05);
+    border-radius: 3rpx;
+}
+
+.imgBox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20rpx;
+}
+
+.imgBox .img {
+    margin-top: 32rpx;
+    width: 328rpx;
+    height: 246rpx;
+
+    border-radius: 18rpx;
+}

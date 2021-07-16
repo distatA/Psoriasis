@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "我的直播间",
+  "enablePullDownRefresh": false,
+
+  "usingComponents": {
+    "van-empty": "@vant/weapp/empty/index"
+  }
+}

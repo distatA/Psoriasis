@@ -1,0 +1,72 @@
+<!-- tab栏 -->
+<view class="nav">
+    <view class="nav_v" bindtap="setNavTap" data-type="{{1}}">
+        <view class="nav_title {{venue_type ===1 ? 'nav_active': '' }}">主会场</view>
+        <view class="nav_hr" wx:if="{{venue_type == 1}}"></view>
+    </view>
+    <view class="nav_v" bindtap="setNavTap" data-type="{{2}}">
+        <view class="nav_title {{venue_type ===2 ? 'nav_active': '' }}">分会场</view>
+        <view class="nav_hr" wx:if="{{venue_type == 2}}"></view>
+    </view>
+</view>
+<!-- 主会场 -->
+<view wx:if="{{venue_type ===1}}" class="z_conference">
+    <view class="z_conference_item" wx:for="{{zhuList}}" wx:key="index" bind:tap="toLive" data-id="{{item.id}}">
+        <image class="z_conference_img" src="{{item.cover}}" data-id="{{item.id}}">
+            <view class="tips">
+                <view class="liveIng" style="{{item.status === 1 ?'background: #F85F2E;':''}}" wx:if="{{item.status === 1}}">
+                    未开始
+                </view>
+                <view class="liveIng" style="{{item.status === 2 ?'background: #0A9E67;':''}}" wx:if="{{item.status === 2}}">
+                    正在直播
+                </view>
+                <view class="liveIng" style="{{item.status === 3 ?'background: #1487FF;':''}}" wx:if="{{item.status === 3}}">
+                    回放
+                </view>
+                <view class="popularity">{{item.click_num}} 人气</view>
+            </view>
+        </image>
+        <view class="z_conference_itemInfo">
+            <view class="z_conference_itemTitle">{{item.title}}</view>
+            <view class="z_conference_itemSpecial">特邀嘉宾 : {{item.guest}}</view>
+            <view class="z_conference_itemSpecial">
+                {{item.start_time_format}} - {{item.end_time_format}}
+            </view>
+            <view class="z_conference_itemDetail">
+                <view></view>
+                <view>热度:{{item.click_num}}</view>
+            </view>
+        </view>
+    </view>
+</view>
+<van-empty class="custom-image" image="https://img.yzcdn.cn/vant/custom-empty-image.png" description="暂无内容" wx:if="{{venue_type ===1 && zhuList.length == 0 }}" />
+<view wx:if="{{venue_type === 2}}" class="z_conference">
+    <view class="z_conference_item" wx:for="{{fenList}}" wx:key="index" bind:tap="toLive" data-id="{{item.id}}">
+        <image class="z_conference_img" src="{{item.cover}}" data-id="{{item.id}}">
+            <view class="tips">
+                <view class="liveIng" style="{{item.status === 1 ?'background: #F85F2E;':''}}" wx:if="{{item.status === 1}}">
+                    未开始
+                </view>
+                <view class="liveIng" style="{{item.status === 2 ?'background: #0A9E67;':''}}" wx:if="{{item.status === 2}}">
+                    正在直播
+                </view>
+                <view class="liveIng" style="{{item.status === 3 ?'background: #1487FF;':''}}" wx:if="{{item.status === 3}}">
+                    回放
+                </view>
+                <view class="popularity">{{item.click_num}} 人气</view>
+            </view>
+        </image>
+        <view class="z_conference_itemInfo">
+            <view class="z_conference_itemTitle">{{item.title}}</view>
+            <view class="z_conference_itemSpecial">特邀嘉宾 : {{item.guest}}</view>
+            <view class="z_conference_itemSpecial">
+                {{item.start_time_format}} - {{item.end_time_format}}
+            </view>
+            <view class="z_conference_itemDetail">
+                <view></view>
+                <view>热度:{{item.click_num}}</view>
+            </view>
+        </view>
+    </view>
+</view>
+<van-empty class="custom-image" image="https://img.yzcdn.cn/vant/custom-empty-image.png" description="暂无内容" wx:if="{{venue_type ===2 && fenList.length == 0 }}" />

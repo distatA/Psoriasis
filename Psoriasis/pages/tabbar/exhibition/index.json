@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "公益义诊",
+  "enablePullDownRefresh": false,
+
+  "usingComponents": {
+    "title": "../../../components/title/index",
+    "login": "/components/login/index",
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index",
+    "tabBar": "/components/tabBar/index"
+
+
+  }
+}

@@ -1,0 +1,78 @@
+{
+    "pages": [
+        "pages/tabbar/index/index",
+        "pages/page/getUserPhone/index",
+        "pages/tabbar/exhibition/index",
+        "pages/tabbar/my/index",
+        "pages/tabbar/consultation/index",
+        "pages/page/conferenceNews/index",
+        "pages/page/conferenceIntroduce/index",
+        "pages/page/retrospect/index",
+        "pages/page/famousDoctors/index",
+        "pages/page/satellite/index",
+        "pages/page/companyDetail/index",
+        "pages/page/famousDoctors/detail",
+        "pages/page/signUp/index",
+        "pages/page/subscribe/index",
+        "pages/page/call/index",
+        "pages/page/myBubscribe/index",
+        "pages/page/eventsWeek/index",
+        "pages/page/eventsList/index",
+        "pages/page/agenda/index",
+        "pages/page/importantInfrom/index",
+        "pages/page/importantInfrom/detail",
+        "pages/page/live/index",
+        "pages/page/conferenceNews/detail",
+        "pages/page/liveEntrance/index",
+        "pages/page/doctorLive/index",
+        "pages/page/exhibitionNotice/index",
+        "pages/page/myLiveRoom/index",
+        "pages/page/binding/index",
+        "pages/page/room/index",
+        "pages/page/subscribeBook/index",
+        "pages/page/signUpBook/index",
+        "pages/page/productDetail/index",
+        "pages/page/eventDetail/index",
+        "pages/page/bannerDetail/index",
+        "pages/page/webview/index",
+        "pages/page/moments/index"
+
+
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#0A9E67",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": true,
+        "backgroundColor": "#fff"
+    },
+    "tabBar": {
+        "color": "#999999",
+        "borderStyle": "white",
+        "list": [{
+                "pagePath": "pages/tabbar/index/index",
+                "iconPath": "images/icon/index.png",
+                "selectedIconPath": "./images/icon/indexFoucs.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/tabbar/consultation/index",
+                "iconPath": "images/icon/consultation.png",
+                "selectedIconPath": "/images/icon/consultationFoucs.png",
+                "text": "赞助展区"
+            }, {
+                "pagePath": "pages/tabbar/exhibition/index",
+                "iconPath": "images/icon/exhibition.png",
+                "selectedIconPath": "./images/icon/exhibitionFoucs.png",
+                "text": "公益义诊"
+            }, {
+                "pagePath": "pages/tabbar/my/index",
+                "iconPath": "images/icon/my.png",
+                "selectedIconPath": "./images/icon/myFoucs.png",
+                "text": "个人中心"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

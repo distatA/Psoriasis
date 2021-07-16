@@ -1,0 +1,11 @@
+<view class="box">
+    <view class="container">
+        <view class="tips">请输入验证邀请码</view>
+        <view style="border-bottom: 1px solid#E3E3E3 !important; ">
+            <van-cell-group>
+                <van-field value="{{ value }}" placeholder="请输入验证邀请码" border="{{ false }}" bind:change="onChange" clearable />
+            </van-cell-group>
+        </view>
+        <view class="btn" bind:tap="submit">提交</view>
+    </view>
+</view>

@@ -1,0 +1,358 @@
+.container {
+  overflow: hidden;
+  /* 焦点 */
+  /* 菜单 */
+  /* pages/index/index.wxss */
+}
+
+.container .banner {
+  width: 686rpx;
+  height: 343rpx;
+  margin: 0 auto;
+  margin-top: 50rpx;
+  padding: 0 30rpx;
+}
+
+.container .banner .imgBox {
+  width: 100%;
+  height: 100%;
+  border-radius: 18rpx;
+}
+
+.container .banner .banner-image {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.container .semicircle {
+  height: 176rpx;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container .require {
+  font-family: PingFangSC-Medium, PingFang SC !important;
+  display: flex;
+  align-items: center;
+  background: #F2F2F2;
+  height: 80rpx !important;
+  border-radius: 32rpx;
+  padding: 0 30rpx;
+  margin: 0 30rpx;
+}
+
+.container .require .linghtFont {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: rgba(10, 158, 103, 0.75);
+  line-height: 40rpx;
+}
+
+.container .require .interval {
+  margin: 0 20rpx;
+  width: 2rpx;
+  height: 32rpx;
+  background: #CECECE;
+  border-radius: 8px;
+}
+
+.container .require .require_title {
+  flex: 1;
+  height: 40rpx;
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #333333;
+}
+
+.container .require .require_icon {
+  width: 24rpx;
+  height: 24rpx;
+  overflow: hidden;
+}
+
+.container .require .require_icon image {
+  width: 24rpx;
+  height: 24rpx;
+  margin-bottom: 42rpx;
+}
+
+.container .drapDown {
+  border-radius: 32rpx 32rpx 0rpx 0rpx;
+}
+
+.container .require_content {
+  text-align: justify;
+  font-size: 26rpx;
+  color: #333;
+  background: #F2F2F2;
+  border-radius: 0rpx 0rpx 32rpx 32rpx;
+  margin: 0 30rpx;
+}
+
+.container .content_item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 15rpx 30rpx;
+  box-sizing: border-box;
+}
+
+.container .content_item .content_img {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.container .content_item .content_font {
+  color: #666666;
+  margin-left: 20rpx;
+  /* overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; */
+  flex: 1;
+  height: 100%;
+}
+
+.container .menu {
+  display: flex;
+  flex-wrap: wrap;
+  height: 358rpx;
+  margin-top: 30rpx;
+  justify-content: space-around;
+  padding: 0 30rpx;
+}
+
+.container .menu .menu_item {
+  height: 150rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 26rpx;
+  margin: 20rpx 10rpx 0;
+}
+
+.container .menu .menu_item .menu_icon {
+  width: 100rpx;
+  height: 100rpx;
+  margin-bottom: 10rpx;
+}
+
+.container .ad_box {
+  white-space: nowrap;
+  width: 95%;
+  margin: 40rpx auto;
+}
+
+.container .ad_box .ad_item {
+  display: inline-block;
+  width: 243rpx;
+  height: 132rpx;
+  border-radius: 30rpx;
+  margin: 10rpx;
+  background-color: #CECECE;
+}
+
+.container .viedo {
+  padding: 0 30rpx;
+  /* 新闻列表样式3 */
+}
+
+.container .viedo .video_mask {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.4);
+}
+.video_container{
+  white-space: nowrap;
+  /* height: 365rpx; */
+  width: 690rpx;
+}
+.viedo_item_box{
+  display: inline-block;
+  margin-top: 24rpx;
+  width: 690rpx;
+  /* height: 365rpx; */
+  height: 390rpx;
+  margin-right:20rpx;
+
+}
+.container .viedo .viedo_box {
+  position: relative;
+  margin-top: 24rpx;
+  width: 690rpx;
+  height: 365rpx;
+  border-radius: 20px;
+}
+
+.container .viedo .video_icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 96rpx;
+  height: 96rpx;
+  vertical-align: middle;
+  overflow: hidden;
+  background-size: cover;
+  transform: translate(-50%, -50%);
+  background-image: url(https://new.schoolpi.net/attach/small_program/2020/video_icon.png);
+}
+
+.container .important {
+  margin-top: 30rpx;
+  padding: 0 30rpx;
+  width: 690rpx;
+  height: 240rpx;
+}
+
+.container .enterprise_box :last-child {
+  margin-right: 0rpx !important;
+}
+
+.container .enterprise_box {
+  white-space: nowrap;
+  width: 95%;
+  margin: 40rpx auto;
+  height: 240rpx;
+  padding-left: 30rpx;
+}
+
+.container .enterprise_box .enterprise_item {
+  display: inline-block;
+  width: 192rpx;
+  height: 224rpx;
+  margin-right: 20rpx;
+  background: #F8F8F8;
+  border-radius: 20px;
+}
+
+.container .enterprise_box .enterprise_item .enterprise_img {
+  width: 99%;
+  height: 128rpx;
+  margin-right: 20rpx;
+}
+
+.container .enterprise_box .enterprise_item .enterprise_font {
+  box-sizing: border-box;
+  padding: 10rpx;
+  font-size: 21rpx;
+  white-space: normal !important;
+  height: 72rpx;
+  color: #333333;
+  width: 100%;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.container .exhibits_box :last-child {
+  margin-right: 0rpx !important;
+}
+
+.container .exhibits_box {
+  padding: 0 30rpx;
+  white-space: nowrap;
+  width: 95%;
+  margin: 40rpx auto;
+  height: 365rpx;
+}
+
+.container .exhibits_box .exhibits_item {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 240rpx;
+  height: 350rpx;
+  background: #FFFFFF;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-right: 32rpx;
+}
+
+.container .exhibits_box .exhibits_item .exhibits_img {
+  width: 99%;
+  height: 240rpx;
+  border-radius: 20px;
+}
+
+.container .exhibits_box .exhibits_item .exhibits_font {
+  box-sizing: border-box;
+  padding: 10rpx 20rpx;
+  white-space: normal !important;
+  height: 72rpx;
+  width: 100%;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 21rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  color: #333333;
+  text-shadow: 0px 1px 27px rgba(0, 0, 0, 0.1);
+}
+
+.container .activity-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 3;
+}
+
+.container .adImg {
+  position: absolute;
+  border-radius: 30rpx;
+  width: 630rpx;
+  height: 834rpx;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container .close {
+  width: 70rpx;
+  height: 70rpx;
+  position: absolute;
+  left: 50%;
+  bottom: 4%;
+  transform: translate(-50%, -50%);
+}
+
+.tishi{
+  width:350rpx;
+  height: 44rpx;
+  background-color: #333;
+  position: fixed;
+  top: 5rpx;
+  right: 5rpx;
+  border-radius: 40rpx;
+  padding-left: 14rpx;
+  padding-right: 5rpx;
+  font-size: 8pt;
+  color: #FFFFFF;
+  line-height: 44rpx;
+  text-align: center;
+  letter-spacing: 2rpx;
+}
+
+.tishi text{
+  position: relative;
+  top: -10rpx;
+}
+
+.tishi image{
+  width: 40rpx;
+  height: 40rpx;
+  position: relative;
+  top: 2rpx;
+}

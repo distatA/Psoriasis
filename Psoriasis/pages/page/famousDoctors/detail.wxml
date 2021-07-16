@@ -1,0 +1,12 @@
+<view style="padding:30rpx;">
+    <import src="../../../utils/wxParse.wxml" />
+    <view class="top">
+        <image class="img" src="{{data.photo}}" />
+        <view class="doctorInfo">
+            <view class="title">职称 : {{data.title}}</view>
+            <view class="position">单位 : {{data.hospital}}</view>
+        </view>
+    </view>
+    <!-- <rich-text class="font" nodes="{{data.brief}}"></rich-text> -->
+    <template is="wxParse" data="{{wxParseData:txtNew.nodes}}" />
+</view>

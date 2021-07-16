@@ -1,0 +1,6 @@
+<!--pages/page/moments/index.wxml-->
+<view class="img-box">
+  <view wx:for="{{list}}" wx:key="i" class="img-item">
+    <image src="{{item.url}}" bindtap="previewImg" data-img="{{item.url}}"></image>
+  </view>
+</view>

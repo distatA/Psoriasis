@@ -1,0 +1,222 @@
+.container {
+    font-family: PingFangSC-Regular, PingFang SC;
+    padding: 30rpx;
+
+
+
+    .liveForeshow {
+        height: 70rpx;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 40rpx 0rpx;
+
+        .swiper {
+            width: 600rpx;
+            height: 42rpx;
+            border: 2rpx solid #FF8660;
+            border-radius: 24rpx;
+
+            swiper {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .swiper_item {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .foreshowFont {
+            // width: 514rpx;
+            flex: 1;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            display: flex;
+            align-items: center;
+            display: -webkit-box;
+            padding: 0 20rpx;
+            font-size: 22rpx;
+            color: #FF8660;
+
+        }
+    }
+
+    .banner {
+        width: 686rpx;
+        height: 345rpx;
+        margin: 0 auto;
+    }
+
+    .banner {
+        width: 686rpx;
+        height: 343rpx;
+        margin: 0 auto;
+    }
+
+    // .banner .wx-swiper-dot-active {
+    //     width: 45rpx;
+    //     height: 11rpx;
+    //     border-radius: 170rpx;
+    //     margin-bottom: 3rpx;
+    // }
+
+    .banner .imgBox {
+        width: 100%;
+        height: 100%;
+        border-radius: 18rpx;
+    }
+
+    .banner .banner-image {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .van-tabs--line .van-tabs__wrap {
+        margin-top: 40rpx;
+    }
+
+    .van-tabs__line {
+        background-color: #0A9E67;
+    }
+
+
+    .z_conference_item {
+        margin-top: 40rpx;
+        border-bottom: 1rpx solid #E9E9E9;
+        box-sizing: border-box;
+        padding: 0 30rpx 0 0;
+        height: 260rpx;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-bottom: 32rpx;
+
+
+        .z_conference_img {
+            position: relative;
+            width: 320rpx;
+            height: 240rpx;
+            border-radius: 18rpx;
+            margin-right: 20rpx;
+        }
+
+
+        .z_conference_itemInfo {
+            height: 240rpx;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            font-size: 24rpx;
+
+            .z_conference_itemTitle {
+                font-size: 28rpx;
+                font-weight: 500;
+                color: #333333;
+
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box; //作为弹性伸缩盒子模型显示。
+                -webkit-box-orient: vertical; //设置伸缩盒子的子元素排列方式--从上到下垂直排列
+                -webkit-line-clamp: 2;
+            }
+
+            .z_conference_itemSpecial {
+                color: #666666;
+            }
+
+            .z_conference_itemDetail {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                font-weight: 400;
+                color: #999999;
+            }
+        }
+    }
+
+    .tips {
+        position: absolute;
+        top: 20rpx;
+        left: 20rpx;
+        min-width: 80rpx;
+        height: 32rpx;
+        display: flex;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 16rpx;
+        color: white;
+        box-sizing: border-box;
+        justify-content: space-between;
+        font-size: 20rpx;
+
+        .liveIng {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            padding: 0 12rpx;
+            border-radius: 16rpx;
+        }
+
+
+        .popularity {
+            min-width: 50rpx;
+            display: flex;
+            align-items: center;
+            padding-left: 5rpx;
+            padding-right: 20rpx;
+        }
+    }
+
+    .nav {
+        width: 100%;
+        height: 100rpx;
+        display: flex;
+        box-sizing: border-box;
+    }
+
+
+    .nav_v {
+        position: relative;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav_active {
+        color: #333333 !important;
+    }
+
+    .nav_title {
+        width: 100%;
+        text-align: center;
+        line-height: 80rpx;
+        color: rgba(153, 153, 153, 1);
+        flex: 1;
+        font-size: 28rpx;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #999999;
+        text-shadow: 0px 1rpx 27rpx rgba(0, 0, 0, 0.05);
+    }
+
+    .nav_hr {
+        position: absolute;
+        bottom: 0%;
+        left: auto;
+        width: 120rpx;
+        height: 6rpx;
+        background: #0A9E67;
+        box-shadow: 0px 1rpx 27rpx 0px rgba(0, 0, 0, 0.05);
+        border-radius: 3rpx;
+    }
+}

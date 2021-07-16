@@ -1,0 +1,30 @@
+<view class="container">
+    <import src="../../../utils/wxParse.wxml" />
+    <!-- tab栏 -->
+    <view class="nav">
+        <view class="nav_v" bindtap="setNavTap" data-type="{{0}}">
+            <view class="nav_title {{nav ===0 ? 'nav_active': '' }}">会议简介</view>
+            <view class="nav_hr" wx:if="{{nav == 0}}"></view>
+        </view>
+        <view class="nav_v" bindtap="setNavTap" data-type="{{1}}">
+            <view class="nav_title {{nav ===1 ? 'nav_active': '' }}">会议组织</view>
+            <view class="nav_hr" wx:if="{{nav == 1}}"></view>
+        </view>
+        <view class="nav_v" bindtap="setNavTap" data-type="{{2}}">
+            <view class="nav_title {{nav ===2 ? 'nav_active': '' }}">会议致辞</view>
+            <view class="nav_hr" wx:if="{{nav == 2}}"></view>
+        </view>
+    </view>
+    <view style="padding:30rpx">
+        <!-- 最新动态 -->
+        <view wx:if="{{nav === 0}}">
+            <template is="wxParse" data="{{wxParseData:jj.nodes}}" />
+        </view>
+        <view wx:if="{{nav === 1}}">
+            <template is="wxParse" data="{{wxParseData:zz.nodes}}" />
+        </view>
+        <view wx:if="{{nav === 2}}">
+            <template is="wxParse" data="{{wxParseData:zc.nodes}}" />
+        </view>
+    </view>
+</view>

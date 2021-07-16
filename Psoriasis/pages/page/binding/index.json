@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "账号验证",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "van-field": "@vant/weapp/field/index"
+  }
+}

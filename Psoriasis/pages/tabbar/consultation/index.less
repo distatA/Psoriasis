@@ -1,0 +1,200 @@
+.container {
+    .nav {
+        width: 100%;
+        height: 100rpx;
+        display: flex;
+        box-shadow: 5rpx 1rpx 27rpx 10rpx rgba(0, 0, 0, 0.05)
+    }
+
+
+    .nav_v {
+        position: relative;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav_active {
+        color: #333333 !important;
+    }
+
+    .nav_title {
+        width: 100%;
+        text-align: center;
+        line-height: 80rpx;
+        color: rgba(153, 153, 153, 1);
+        width: 112px;
+        font-size: 28rpx;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #999999;
+        text-shadow: 0px 1rpx 27rpx rgba(0, 0, 0, 0.05);
+    }
+
+    .nav_hr {
+        position: absolute;
+        bottom: 0%;
+        left: 26%;
+        width: 120rpx;
+        height: 6rpx;
+        background: #0A9E67;
+        box-shadow: 0px 1rpx 27rpx 0px rgba(0, 0, 0, 0.05);
+        border-radius: 3rpx;
+    }
+
+    .hotCompany {
+        font-family: PingFangSC-Medium, PingFang SC;
+
+        .hotCompany_item {
+            margin-top: 40rpx;
+            box-sizing: border-box;
+            padding: 40rpx;
+            width: 686rpx;
+            height: 216rpx;
+            background: #FFFFFF;
+            box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.1);
+
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            .hotCompany_top {
+                display: flex;
+                align-items: center;
+
+                height: 100rpx;
+                width: 100%;
+
+                .hotCompany_topImg {
+                    width: 80rpx;
+                    height: 80rpx;
+                }
+
+                .hotCompany_topFont {
+                    overflow: hidden; //超出的文本隐藏
+                    text-overflow: ellipsis; //用省略号显示
+                    white-space: nowrap; //不换行
+                    margin-left: 40rpx;
+                    flex: 1;
+                    font-size: 28rpx;
+                    font-weight: 500;
+                    color: #333333;
+                }
+            }
+
+            .hotCompany_bottom {
+                margin-top: 25rpx;
+                display: flex;
+                align-items: center;
+                height: 50rpx;
+                width: 100%;
+
+                .hotCompany_bomImg {
+                    width: 30rpx;
+                    height: 30rpx;
+                }
+
+                .hotCompany_bomFont {
+
+                    font-size: 24rpx;
+                    margin-left: 30rpx;
+                    color: #666666;
+                }
+            }
+
+            .hotCompany_rank {
+                position: absolute;
+                top: 0rpx;
+                right: 0rpx;
+                min-width: 133rpx;
+                padding: 0 10rpx;
+                height: 43rpx;
+                background: #FA8D4C;
+                border-radius: 67rpx 0px 0px 67rpx;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+
+
+
+                .rankIng_font {
+                    font-size: 20rpx;
+                    font-family: PingFangSC-Regular, PingFang SC;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+
+    .hotExhibit {
+        font-family: PingFangSC-Medium, PingFang SC;
+
+        .hotExhibit_item {
+            width: 686rpx;
+            height: 322rpx;
+            margin-top: 40rpx;
+            box-sizing: border-box;
+            padding: 40rpx;
+            background: #FFFFFF;
+            box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            .hotExhibit_img {
+                width: 240rpx;
+                height: 240rpx;
+            }
+
+            .hotExhibit_right {
+                flex: 1;
+                margin-left: 32rpx;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                .hotExhibit_title {
+                    font-size: 28rpx;
+                    font-weight: 500;
+                    color: #333333;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+
+                }
+
+                .hotExhibit_company {
+                    font-size: 24rpx;
+                    color: #666666;
+                }
+            }
+
+            .hotExhibit_rank {
+                position: absolute;
+                top: 0rpx;
+                right: 0rpx;
+                min-width: 133rpx;
+                padding: 0 10rpx;
+                height: 43rpx;
+                background: #FA8D4C;
+                border-radius: 67rpx 0px 0px 67rpx;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .rankIng_font {
+                    font-size: 20rpx;
+                    font-family: PingFangSC-Regular, PingFang SC;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}

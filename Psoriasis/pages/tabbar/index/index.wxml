@@ -1,0 +1,154 @@
+<!-- index.wxml -->
+<view class="container">
+	<login showLoginForm="{{showLogin}}" />
+	<!-- 弹窗 -->
+	<view class="activity-mask" wx:if="{{showAd}}">
+		<image class="adImg" src="{{open[0].image}}" />
+		<image class="close" bind:tap="closeAd" src="../../../images/icon_close.png" />
+	</view>
+	<!-- 绿色圆弧 -->
+	<image class="semicircle" src="../../../images/rectangle.png" />
+	<!-- 轮播图 -->
+	<view class="banner">
+		<swiper class="indexBanner" indicator-color="#83cdb2" indicator-active-color="#0A9E67" circular="true" indicator-dots="true" autoplay="{{true}}" circular="true" easing-function="linear" current="{{index}}">
+			<swiper-item class="imgBox" wx:for="{{banner}}" wx:key="index">
+				<image class="banner-image" src="{{item.image}}" mode="widthFix" bindtap="toBanner" data-id="{{item.id}}" data-url="{{item.image}}" data-type="{{1}}"></image>
+			</swiper-item>
+		</swiper>
+	</view>
+	<!-- 焦点 -->
+	<view class="require {{ drapDown ? 'drapDown':''}}" catchtap="anRequireContent">
+		<view class="linghtFont">焦点</view>
+		<view class="interval"></view>
+		<view class="require_title">第四届中国银屑病大会（2020）</view>
+		<view class="require_icon">
+			<image wx:if="{{!drapDown}}" src="../../../images/you.png"></image>
+			<image wx:if="{{drapDown}}" src="../../../images/xia.png"></image>
+		</view>
+	</view>
+	<!-- 焦点下拉 -->
+	<view class="require_content" wx:if="{{drapDown}}">
+		<!-- <rich-text>123</rich-text> -->
+		<view class="content_item">
+			<image class="content_img" src="../../../images/adress.png"></image>
+			<view class="content_font">会议地点: {{focus.address}}</view>
+		</view>
+		<view class="content_item">
+			<image class="content_img" src="../../../images/time.png"></image>
+			<view class="content_font">会议时间: {{focus.start_time}} - {{focus.end_time}}</view>
+		</view>
+		<view class="content_item">
+			<image class="content_img" src="../../../images/category.png"></image>
+			<view class="content_font">主办单位: {{focus.organizer}}</view>
+		</view>
+	</view>
+	<!-- 菜单栏 -->
+	<view class="menu">
+		<block wx:for="{{menu}}" wx:key="index">
+			<view class="menu_item" bind:tap="toPage" data-url="{{item.url}}">
+				<image class="menu_icon" src="{{item.image}}"></image>
+				<view class="menu_text">{{item.name}}</view>
+			</view>
+		</block>
+	</view>
+	<!-- 广告位 -->
+	<view class="ad">
+		<scroll-view class="ad_box" scroll-x scroll-y="false">
+			<block wx:for="{{rotation}}" wx:key="index">
+				<image class="ad_item" src="{{item.image}}" data-item="{{item}}" bindtap="goAd"></image>
+			</block>
+		</scroll-view>
+	</view>
+	<!-- 宣传片 -->
+	<view style=" padding:0 30rpx;">
+		<title item="大会宣传片" />
+	</view>
+	<!-- 视频 -->
+	<view class="viedo">
+
+
+	
+		<swiper indicator-dots="true" autoplay="{{autoplay}}" interval="3000" circular="true" class="viedo_item_box" bindchange="cahngeVideoIndex">
+			<block wx:for="{{videoList}}" wx:key="*this">
+				<swiper-item>
+					<video class="viedo_box" src="{{item.url}}" wx:if="{{item.showMask}}" show-center-play-btn="{{false}}" custom-cache='{{false}}' object-fit="fill">
+						<view class="{{item.showMask ? 'video_mask' : '' }}" bind:tap="mask" data-id="{{item.id}}">
+							<view class=" {{item.showMask ? 'video_icon' : '' }}"></view>
+						</view>
+					</video>
+					<video class="viedo_box" src="{{item.url}}" autoplay="{{true}}" object-fit="fill" wx:else>
+						<view class="{{item.showMask ? 'video_mask' : '' }}" bind:tap="mask">
+							<view class=" {{item.showMask ? 'video_icon' : '' }}"></view>
+						</view>
+					</video>
+				</swiper-item>
+			</block>
+		</swiper>
+			<!-- <scroll-view  class="video_container" scroll-x="true" scroll-y="false"> 
+		<view class="viedo_item_box" wx:for="{{videoList}}" wx:key="index">
+				<video class="viedo_box" src="{{item.url}}" wx:if="{{item.showMask}}" show-center-play-btn="{{false}}" custom-cache='{{false}}' object-fit="fill">
+					<view class="{{item.showMask ? 'video_mask' : '' }}" bind:tap="mask" data-id="{{item.id}}">
+						<view class=" {{item.showMask ? 'video_icon' : '' }}"></view>
+					</view>
+				</video>
+				<video class="viedo_box" src="{{item.url}}" autoplay="{{true}}" object-fit="fill" wx:else>
+					<view class="{{item.showMask ? 'video_mask' : '' }}" bind:tap="mask">
+						<view class=" {{item.showMask ? 'video_icon' : '' }}"></view>
+					</view>
+				</video>
+			</view> -->
+
+		<!-- </scroll-view> -->
+	</view>
+	<!-- 展会重要通知 -->
+	<view>
+		<view style="margin-top:30rpx; padding:0 30rpx;">
+			<title item="大会重要通知" />
+		</view>
+		<image class="important" src="../../../images/important.png" bind:tap="goDetail" data-url="{{'../../page/importantInfrom/index'}}" data-type="{{3}}" />
+	</view>
+	<!-- 展会精彩瞬间 -->
+	<view>
+		<view style="margin-top:30rpx; padding:0 30rpx;">
+			<title item="大会精彩瞬间" />
+		</view>
+		<image class="important" src="../../../images/jingcai1.png" bindtap="goWebview" />
+
+	</view>
+	<!-- 推荐企业 -->
+	<view>
+		<view style="margin-top:30rpx; padding:0 30rpx;">
+			<title item="推荐企业" />
+		</view>
+		<view class="sell_enterprise">
+			<scroll-view class="enterprise_box" scroll-x="true" scroll-y="false">
+				<view class="enterprise_item" wx:for="{{company}}" wx:key="id" bind:tap="goDetail" data-type="{{1}}" data-id="{{item.id}}" data-url="{{item.url}}">
+					<image class="enterprise_img" src="{{item.logo}}" />
+					<view class="enterprise_font">{{item.name}}</view>
+				</view>
+			</scroll-view>
+		</view>
+	</view>
+	<!-- 推荐展品 -->
+	<view>
+		<view style="margin-top:30rpx; padding:0 30rpx;">
+			<title item="推荐展品" />
+		</view>
+		<view class="sell_exhibits" style="margin-bottom:30rpx;">
+			<scroll-view class="exhibits_box" scroll-x="true" scroll-y="false">
+				<view class="exhibits_item" wx:for="{{product}}" wx:key="id" bind:tap="goDetail" data-type="{{2}}" data-id="{{item.id}}">
+					<image class="exhibits_img" src="{{item.cover}}" />
+					<view class="exhibits_font">{{item.name}}</view>
+				</view>
+			</scroll-view>
+		</view>
+	</view>
+	<!-- <view style="height:100rpx;width:100%"></view> -->
+</view>
+<!-- <tabBar active="{{0}}" /> -->
+
+<view class="tishi" wx:if="{{tishi}}" bind:tap="switchTishi">
+	<text>点击</text>
+	<image src="./ic1.png"></image>
+	<text>添加到 【我的小程序】</text>
+</view>

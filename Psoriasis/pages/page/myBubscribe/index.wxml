@@ -1,0 +1,13 @@
+<view>
+    <block wx:if="{{results}}">
+        <view class="container" wx:for="{{results}}" data-id="id" bind:tap="toRegister">
+            <view class="top">
+                <view class="font">预约时间 ： {{item.create_time}}</view>
+                <view class="hightline">预约成功</view>
+            </view>
+            <view class="content">预约内容：一对一线上公益问诊</view>
+            <view class="bottom">{{item.status}}</view>
+        </view>
+    </block>
+    <van-empty class="custom-image" image="https://img.yzcdn.cn/vant/custom-empty-image.png" description="暂无内容" wx:if="{{!count}}" />
+</view>

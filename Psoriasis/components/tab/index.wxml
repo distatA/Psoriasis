@@ -1,0 +1,6 @@
+  <view class="nav" wx:for="{{item}}">
+        <view class="nav_v" bindtap="setNavTap" data-index="{{index}}">
+            <view class="nav_title {{nav === item.index ? 'nav_active': '' }}">{{item.value}}</view>
+            <view class="nav_hr" wx:if="{{nav === item.index}}"></view>
+        </view>
+    </view> 

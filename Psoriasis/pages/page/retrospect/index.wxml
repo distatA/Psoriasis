@@ -1,0 +1,18 @@
+<view class="container" style="padding: 0 30rpx">
+    <view class="nav">
+        <view class="nav_v" bindtap="setNavTap" data-id="{{item.id}}" wx:for="{{navArr}}" wx:key="index">
+            <view class="nav_title {{item.id === nav ? 'nav_active': '' }}">{{item.title}}</view>
+            <view class="nav_hr" wx:if="{{item.id == nav }}"></view>
+        </view>
+    </view>
+    <view style="height:100rpx;width:100%"></view>
+    <view class="imgBox">
+        <block wx:for="{{results}}">
+            <van-image use-loading-slot image-class="img" src="{{item.image}}" fit="fill" show-loading wx:if="{{item.review_id === nav }}" bind:tap="goAd" data-url="{{item.image}}" lazy-load>
+                <van-loading slot="loading" type="spinner" size="20" vertical>
+                    加载中......
+                </van-loading>
+            </van-image>
+        </block>
+    </view>
+</view>

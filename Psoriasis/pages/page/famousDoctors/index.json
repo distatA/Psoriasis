@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "百名名医",
+  "enablePullDownRefresh": false,
+
+  "usingComponents": {
+    "van-index-bar": "@vant/weapp/index-bar/index",
+    "van-index-anchor": "@vant/weapp/index-anchor/index"
+  }
+}

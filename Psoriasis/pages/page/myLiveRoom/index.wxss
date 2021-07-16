@@ -1,0 +1,49 @@
+.container {
+  padding: 30rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+}
+.container .liveRoomBox .liveRoom_item {
+  margin-bottom: 32rpx;
+  box-sizing: border-box;
+  padding: 30rpx;
+  width: 686rpx;
+  height: 254rpx;
+  background: #FFFFFF;
+  box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 32rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.container .liveRoomBox .liveRoom_item .liveRoom_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .liveRoomBox .liveRoom_item .liveRoom_top .liveTime {
+  font-size: 26rpx;
+  color: #666666;
+}
+.container .liveRoomBox .liveRoom_item .liveRoom_top .liveStatus {
+  font-size: 26rpx;
+  color: #F85F2E;
+}
+.container .liveRoomBox .liveRoom_item .liveRoom_title {
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #333333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.container .liveRoomBox .liveRoom_item .liveRoom_type {
+  color: #FFFFFF;
+  min-width: 152rpx;
+  max-width: 230rpx;
+  height: 48rpx;
+  background: #1487FF;
+  border-radius: 24rpx;
+  display: flex;
+  justify-content: center;
+  margin-left: -6rpx;
+}

@@ -1,0 +1,89 @@
+.container {
+  font-family: PingFangSC-Medium, PingFang SC;
+  padding: 0 30rpx;
+}
+
+.container .van-index-bar__index {
+  font-size: 30rpx !important;
+  margin: 7rpx 0rpx;
+
+}
+
+.container .f_doctors {
+  width: 100%;
+}
+
+.container .f_doctors .f_doctors_item {
+  margin-top: 30rpx;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  width: 686rpx;
+  /* height: 320rpx; */
+  height: 270rpx;
+  border-radius: 20rpx;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.container .f_doctors .f_doctors_item .f_doctors_img {
+  width: 140rpx;
+  height: 190rpx;
+  border-radius: 4rpx;
+}
+
+.container .f_doctors .f_doctors_item .f_doctors_detail {
+  height: 240rpx;
+  flex: 1;
+  font-size: 26rpx;
+  font-weight: 400;
+  color: #666666;
+  margin-left: 25rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.container .f_doctors .f_doctors_item .f_doctors_detail .f_doctors_title {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #333333;
+}
+
+.container .f_doctors .f_doctors_item .f_doctors_detail .f_doctors_pro {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.container .f_doctors .f_doctors_item .f_doctors_detail .f_doctors_hospital {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.container .van-index-anchor-wrapper,
+.container .van-index-anchor {
+  opacity: 0 !important;
+  line-height: 0 !important;
+}
+
+.container .van-index-bar__sidebar {
+  width: 44rpx;
+  box-sizing: border-box;
+  background: #E2F2ED;
+  border-radius: 22rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30rpx 0;
+}
+
+.container .van-index-bar__index {
+  text-align: center;
+  margin-right: 20rpx;
+}

@@ -1,0 +1,32 @@
+<view class="container">
+    <login showLoginForm="{{showLogin}}" />
+    <!-- 用户名 -->
+    <view class="user">
+        <!-- ../../../images/userimg.png -->
+        <block wx:if="{{userInfo.avatar ||userInfo.nickname }}">
+            <image class="user_img" src="{{userInfo.avatar}}">
+                <button class="btnGo" open-type="getUserInfo" bindgetuserinfo="onGotUserInfo"></button>
+            </image>
+            <view class="user_name">{{userInfo.nickname}}</view>
+        </block>
+        <block wx:else>
+            <image class="user_img" src="../../../images/userimg.png">
+                <button class="btnGo" open-type="getUserInfo" bindgetuserinfo="onGotUserInfo"></button>
+            </image>
+            <view class="user_name">立即登录</view>
+        </block>
+    </view>
+    <view class="user_handle">
+        <view class="user_item" wx:for="{{handleArr}}" wx:key="index" bind:tap="toPage" data-url="{{item.url}}">
+            <image class="user_img" src="{{item.icon}}" />
+            <view class="user_font">{{item.name}}</view>
+            <image class="user_jt" src="../../../images/you.png" />
+        </view>
+        <view class="user_item" bind:tap="toPage" data-url="../../page/myLiveRoom/index" wx:if="{{showLive}}">
+            <image class="user_img" src="../../../images/zhibo.png" />
+            <view class="user_font">我的直播间</view>
+            <image class="user_jt" src="../../../images/you.png" />
+        </view>
+    </view>
+    <!-- <tabBar active="{{3}}" /> -->
+</view>

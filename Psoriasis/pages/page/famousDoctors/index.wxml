@@ -1,0 +1,20 @@
+<view class="container">
+    <!-- highlight-color="black" -->
+    <!-- style="opcity:0 !important" -->
+    <van-index-bar sticky="{{true}}">
+        <view wx:for="{{doctor}}" wx:for-item="items">
+            <van-index-anchor index="{{ items.title }}" />
+            <!-- <view style="margin: 20rpx 0 0 30rpx;">{{items.title}}</view> -->
+            <van-cell class="f_doctors">
+                <view class="f_doctors_item" wx:for="{{items.list}}" wx:key="id" bind:tap="toPage" data-id="{{item.id}}">
+                    <image class="f_doctors_img" src="{{item.photo}}" />
+                    <view class="f_doctors_detail">
+                        <view class="f_doctors_title">{{item.name}}</view>
+                        <view class="f_doctors_pro">职称: {{item.title}}</view>
+                        <view class="f_doctors_hospital">所属医院: {{item.hospital}}</view>
+                    </view>
+                </view>
+            </van-cell>
+        </view>
+    </van-index-bar>
+</view>

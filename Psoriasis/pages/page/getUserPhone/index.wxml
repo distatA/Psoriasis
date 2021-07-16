@@ -1,0 +1,6 @@
+<view class='lar-bg'>
+    <image class="img" src="../../../images/logo.png" />
+    <button class="btner" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">
+        手机号快捷登录
+    </button>
+</view>

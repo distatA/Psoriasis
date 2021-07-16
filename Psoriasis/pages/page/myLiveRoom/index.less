@@ -1,0 +1,60 @@
+.container {
+    padding: 30rpx;
+    font-family: PingFangSC-Regular, PingFang SC;
+
+    .liveRoomBox {
+
+        .liveRoom_item {
+            margin-bottom: 32rpx;
+            box-sizing: border-box;
+            padding: 30rpx;
+            width: 686rpx;
+            height: 254rpx;
+            background: #FFFFFF;
+            box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 32rpx;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .liveRoom_top {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .liveTime {
+                    font-size: 26rpx;
+                    color: #666666;
+                }
+
+                .liveStatus {
+                    font-size: 26rpx;
+                    color: #F85F2E;
+                }
+            }
+
+            .liveRoom_title {
+                font-size: 32rpx;
+                font-weight: 500;
+                color: #333333;
+
+                overflow: hidden; //超出的文本隐藏
+                text-overflow: ellipsis; //溢出用省略号显示
+                white-space: nowrap
+            }
+
+            .liveRoom_type {
+                color: #FFFFFF;
+                min-width: 152rpx;
+                max-width: 230rpx;
+                height: 48rpx;
+                background: #1487FF;
+                border-radius: 24rpx;
+                display: flex;
+                justify-content: center;
+                margin-left: -6rpx;
+
+            }
+        }
+    }
+}

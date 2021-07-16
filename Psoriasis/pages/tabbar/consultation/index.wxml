@@ -1,0 +1,82 @@
+<view class="container">
+    <!-- tab栏 -->
+    <view class="nav">
+        <view class="nav_v" bindtap="setNavTap" data-type="{{0}}">
+            <view class="nav_title {{nav ===0 ? 'nav_active': '' }}">热门展商</view>
+            <view class="nav_hr" wx:if="{{nav == 0}}"></view>
+        </view>
+        <view class="nav_v" bindtap="setNavTap" data-type="{{1}}">
+            <view class="nav_title {{nav ===1 ? 'nav_active': '' }}">热门展品</view>
+            <view class="nav_hr" wx:if="{{nav == 1}}"></view>
+        </view>
+        <view class="nav_v" bindtap="setNavTap" data-type="{{2}}">
+            <view class="nav_title {{nav ===2 ? 'nav_active': '' }}">热门活动</view>
+            <view class="nav_hr" wx:if="{{nav == 2}}"></view>
+        </view>
+    </view>
+    <view style="padding:0 30rpx;">
+        <view wx:if="{{nav === 0}}">
+            <!-- 热门展商 -->
+            <view class="hotCompany">
+                <block wx:for="{{company}}" wx:key="id">
+                    <view class="hotCompany_item" bind:tap="toPage" data-id="{{item.id}}" data-type="{{1}}">
+                        <view class="hotCompany_rank">
+                            <view class="rankIng_font">热度排名:  {{item.sort}}</view>
+                        </view>
+                        <view class="hotCompany_top">
+                            <image class="hotCompany_topImg" src="{{item.logo}}" />
+                            <view class="hotCompany_topFont">{{item.name}}</view>
+                        </view>
+                        <view class="hotCompany_bottom">
+                            <image class="hotCompany_bomImg" src="../../../images/icon5.png" />
+                            <view class="hotCompany_bomFont">{{item.type_name}}</view>
+                        </view>
+                    </view>
+                </block>
+            </view>
+        </view>
+        <!-- 热门展品 -->
+        <view wx:if="{{nav === 1}}">
+            <view class="hotExhibit">
+                <block wx:for="{{product}}" wx:key="index">
+                    <view class="hotExhibit_item" data-id="{{item.id}}" bind:tap="toPage" data-type="{{2}}">
+                        <view class="hotExhibit_rank">
+                            <view class="rankIng_font">热度排名:  {{item.sort}}</view>
+                        </view>
+                        <image class="hotExhibit_img" src="{{item.cover}}" />
+                        <view class="hotExhibit_right">
+                            <view class="hotExhibit_title">{{item.name}}</view>
+                            <view class="hotExhibit_company">{{item.company_name}}</view>
+                        </view>
+                    </view>
+                </block>
+            </view>
+        </view>
+        <!-- 热门活动 -->
+        <view wx:if="{{nav === 2}}">
+            <view class="hotCompany">
+                <block wx:for="{{events}}" wx:key="id">
+                    <view class="hotCompany_item" bind:tap="toPage" data-id="{{item.id}}" data-type="{{3}}">
+                        <view class="hotCompany_rank">
+                            <view class="rankIng_font">热度排名:  {{item.heat}}</view>
+                        </view>
+                        <view class="hotCompany_top">
+                            <image class="hotCompany_topImg" src="{{item.cover}}" />
+                            <view class="hotCompany_topFont">{{item.title}}</view>
+                        </view>
+                        <view class="hotCompany_bottom">
+                            <image class="hotCompany_bomImg" src="../../../images/icon5.png" />
+                            <view class="hotCompany_bomFont">{{item.tag}}</view>
+                        </view>
+                    </view>
+                </block>
+            </view>
+        </view>
+        <van-empty class="custom-image" image="https://img.yzcdn.cn/vant/custom-empty-image.png" description="暂无内容" wx:if="{{nav === 0 && company.length === 0 }}" />
+        <van-empty class="custom-image" image="https://img.yzcdn.cn/vant/custom-empty-image.png" description="暂无内容" wx:if="{{nav === 1 && product.length === 0 }}" />
+        <van-empty class="custom-image" image="https://img.yzcdn.cn/vant/custom-empty-image.png" description="暂无内容" wx:if="{{nav === 2 && events.length === 0 }}" />
+        <view style="height:50rpx;width:100%"></view>
+    </view>
+    <!-- 间隔 -->
+    <!-- <tabBar active="{{1}}" /> -->
+</view>

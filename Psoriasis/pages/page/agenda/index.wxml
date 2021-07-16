@@ -1,0 +1,35 @@
+<import src="../../../utils/wxParse.wxml" />
+<view class="container">
+    <!-- tab栏 -->
+    <view class="nav">
+        <view class="nav_v" bindtap="setNavTap" data-type="{{index}}" data-day="{{item.day}}" wx:for="{{tab}}">
+            <view class="nav_title {{nav === index ? 'nav_active': '' }}">{{item.date}}</view>
+            <view class="nav_hr" wx:if="{{nav == index}}"></view>
+        </view>
+    </view>
+    <!-- 日程 -->
+    <view class="agenda_box" wx:for="{{content}}">
+        <image class="dot" src="../../../images/agenda.png"></image>
+        <view class="agenda_item">
+            <view class="topTips" bind:tap="dropDown" data-index="{{index}}">
+                <view class="time_box">
+                    <view class="heightline"></view>
+                    <view class="timeFont">{{item.describe}}</view>
+                    <view class="time">{{item.time}}</view>
+                </view>
+                <!-- 间隔 -->
+                <view class="interval"></view>
+                <view class="rightBox">
+                    <view class="conferenceTips">{{item.title}}</view>
+                    <image class="top" src="{{item.isShow  ? '../../../images/top.png' : '../../../images/xia.png'}}"></image>
+                </view>
+            </view>
+            <view class="agendaInfo" wx:if="{{item.isShow}}">
+                <view class="agendaFont"></view>
+                <!-- <rich-text class="agendaFont" nodes="{{item.content}}"></rich-text> -->
+                <template is="wxParse" data="{{wxParseData:htmlAry[index].nodes}}" />
+                <view class="agendaFont"></view>
+            </view>
+        </view>
+    </view>
+</view>

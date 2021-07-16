@@ -1,0 +1,91 @@
+<!-- <view class="box"> -->
+<view class="box" style="{{!compatibility ? 'height:100vh;': '' }}">
+    <view class="container">
+        <!-- <van-popup show="{{ showGetPhone }}" position="bottom" custom-style="height: 20%;" bind:close="onClose" class="getPhoneBox">
+            <button class="getPhonebtn" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">
+                获取手机号
+            </button>
+        </van-popup> -->
+        <!-- 姓名 -->
+        <van-cell-group>
+            <van-field value="{{ name }}" clearable label="姓名" placeholder="必填" bind:click-icon="onClickIcon" bind:change="changeName" placeholder-style="text-align:right;" input-align="right" />
+        </van-cell-group>
+        <!-- 手机 -->
+        <van-cell-group wx:if="{{notPhone}}">
+            <van-field value="{{ phone }}" center clearable label="手机" placeholder="必填" border="{{ false }}" use-button-slot placeholder-style="text-align:right;" bind:change="changePhone" input-align="right">
+                <!-- <button slot="button" class="btn" disabled="{{disabled}}" bind:tap="sendMsg">
+                    {{codeText}}
+                </button> -->
+            </van-field>
+        </van-cell-group>
+        <van-cell-group wx:if="{{!notPhone}}">
+            <van-field value="{{phone}}" label="手机" disabled border="{{ false }}" input-align="right" />
+        </van-cell-group>
+        <!-- 验证码 -->
+        <!-- <van-cell-group>
+            <van-field value="{{ code }}" clearable label="短信验证码" placeholder="必填" bind:click-icon="onClickIcon" class="code" placeholder-style="text-align:right;" bind:change="changeCode" />
+        </van-cell-group> -->
+        <!-- 性别 -->
+        <van-cell-group>
+            <van-field value="{{ }}" center clearable label="性别" border="{{ false }}" use-button-slot disabled>
+                <van-button slot="button" size="small" type="primary" class="" bind:tap="clickSex" style="color:black;">
+                    {{sex === 1 ?'男' :'女'}}
+                    <image style="width:20rpx;height:20rpx" src="../../../images/xia.png" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="" />
+                </van-button>
+            </van-field>
+        </van-cell-group>
+        <!-- 性别选择弹窗 -->
+        <van-action-sheet show="{{showSex}}" actions="{{ sexArr }}" bind:close="onClose" bind:select="onSelectSex" cancel-text="取消" bind:cancel="cancel" />
+        <!-- 身份证 -->
+        <van-cell-group>
+            <van-field value="{{ sfz }}" clearable label="身份证号" placeholder="必填" bind:click-icon="onClickIcon" placeholder-style="text-align:right;" class="sfz" bind:change="changeId" input-align="right" />
+        </van-cell-group>
+        <!-- 地区 -->
+        <van-cell-group>
+            <van-field value="{{ }}" center clearable label="地区" border="{{ false }}" use-button-slot disabled>
+                <van-button slot="button" size="small" type="primary" class="areaPicker" style="color:black;">
+                    <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}" range-key="name">
+                        <view wx:if="{{!provinceId}}">所在地区</view>
+                        <view class="picker" wx:else>
+                            {{provinceName}}  {{cityName}}  {{districtName}}
+                        </view>
+                    </picker>
+                    <image style="width:20rpx;height:20rpx" src="../../../images/xia.png" />
+                </van-button>
+            </van-field>
+        </van-cell-group>
+        <!-- 上传照片 -->
+        <view class="upLoad">
+            <view class="picBox" wx:if="{{!showSex}}">
+                <image class="zheng" src="{{fileListZheng.length === 0 ? '../../../images/zheng.png': fileListZheng.path}}">
+                    <van-uploader file-list="{{  fileListZheng }}" class="zhengUpload" bind:after-read="afterReadZheng" />
+                </image>
+                <image class="bei" src="{{fileListBei.length === 0 ? '../../../images/bei.png': fileListBei.path}}">
+                    <van-uploader file-list="{{ fileListBei }}" preview-image class="beiUpload" bind:after-read="afterReadBei" />
+                </image>
+            </view>
+            <view class="picBox" wx:else>
+                <image class="zheng" src="{{fileListZheng.length === 0 ? '../../../images/zheng.png': fileListZheng.path}}"></image>
+                <image class="bei" src="{{fileListBei.length === 0 ? '../../../images/bei.png': fileListBei.path}}"></image>
+            </view>
+            <view class="upLoadFont">
+                <view>上传证件正面</view>
+                <view>上传证件背面</view>
+            </view>
+        </view>
+        <view style="display:flex;align-items:center;margin-top:33rpx;">
+            <van-checkbox value="{{ checked }}" shape="square" bind:change="onChange" checked-color="#0A9E67"></van-checkbox>
+            <view class="xieyi" bind:tap="toRead">我已阅读《义诊须知》</view>
+        </view>
+        <!-- 报名 -->
+        <view class="signUpBtn" bind:tap="submit" wx:if="{{checked}}">
+            <view>立即预约</view>
+        </view>
+        <view class="signUpBtnDisable" wx:if="{{!checked}}">
+            <view>立即预约</view>
+        </view>
+        <!-- <view class="mask" wx:if="{{showTips}}">
+            <scroll-view class="tipsBox" scroll-y="true">1231231</scroll-view>
+        </view> -->
+    </view>
+</view>

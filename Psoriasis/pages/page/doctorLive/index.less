@@ -1,0 +1,352 @@
+.container {
+    width: 100%;
+    background-color: #333333;
+    height: 100vh;
+    font-family: PingFangSC-Regular, PingFang SC;
+    display: flex;
+    flex-direction: column;
+
+    .bugBox {
+        width: 50rpx;
+        height: 50rpx;
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .bottomBar {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 96rpx;
+        background: rgba(115, 115, 115, 0.9);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 40rpx;
+        box-sizing: border-box;
+        z-index: 2;
+
+        .start {
+            width: 199rpx;
+            height: 64rpx;
+            background: rgba(0, 0, 0, 0.9);
+            border-radius: 32rpx;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 0 30rpx;
+            box-sizing: border-box;
+
+            image {
+                width: 25rpx;
+                height: 25rpx;
+                margin: 5rpx 9rpx 0rpx 0rpx;
+            }
+
+            .startFont {
+                font-size: 26rpx;
+                // color: #FF3A58;
+                color: #FFFFFF;
+            }
+        }
+
+        .lineUp {
+            font-size: 22rpx;
+            color: #FFFFFF;
+
+            .lineUpNum {
+                display: inline-block;
+                font-size: 28rpx;
+            }
+        }
+    }
+
+    .ppt-container {
+        margin: 20rpx 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .ppt_box {
+
+            background-color: #fff;
+            width: 720rpx;
+            height: 405rpx;
+            // margin: 16rpx auto;
+            display: block;
+        }
+
+        .leftarrow,
+        .rightarrow {
+            width: 64rpx;
+            height: 64rpx;
+            text-align: center;
+            line-height: 64rpx;
+            background-color: rgba(0, 0, 0, 0.4);
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+
+        .leftarrow {
+            left: 0
+        }
+
+        .rightarrow {
+            right: 0
+        }
+
+        .leftarrow .lefticon {
+            width: 40rpx;
+            height: 40rpx;
+            vertical-align: middle;
+        }
+
+        .rightarrow .lefticon {
+            width: 40rpx;
+            height: 40rpx;
+            vertical-align: middle;
+
+        }
+    }
+
+    .flex_end {
+        margin-top: 88rpx;
+        display: flex;
+        justify-content: flex-end;
+
+        .teacher_box {
+            width: 154rpx;
+            height: 192rpx;
+            background-color: #fff;
+            margin-right: 16rpx;
+
+        }
+    }
+
+    .review {
+        flex: 1;
+        width: 100vw;
+        padding-bottom: 96rpx;
+        position: relative;
+        height: calc(100vh - 805rpx);
+
+        .reviewBox {
+            padding: 0 20rpx;
+            height: calc(100vh - 805rpx);
+            width: 83%;
+
+            ::-webkit-scrollbar {
+                display: none;
+                width: 0;
+                height: 0;
+                color: transparent;
+            }
+
+            .review_item {
+                font-size: 26rpx;
+                min-width: 150rpx;
+                color: #0a9e67;
+                border-radius: 24rpx;
+                background-color: rgba(0, 0, 0, 0.3);
+                border-radius: 24rpx;
+                padding: 12rpx 20rpx;
+                margin-bottom: 25rpx;
+                display: table;
+                max-width: 365rpx;
+
+                .heightlight {
+                    word-break: break-all;
+                    word-wrap: break-word;
+
+                    width: 100%;
+                    margin-left: 7rpx;
+                    color: #fff;
+                }
+            }
+        }
+
+        .pptLogo {
+            width: 50rpx;
+            height: 50rpx;
+            right: 43rpx;
+            top: 30rpx;
+            position: absolute;
+
+        }
+    }
+
+    .mask {
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        z-index: 3;
+
+        .pptBox {
+            margin-top: 20rpx;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: #fff;
+            border-radius: 34rpx 34rpx 0px 0px;
+            height: 1000rpx;
+
+            .close {
+                width: 40rpx;
+                height: 40rpx;
+                position: absolute;
+                right: 24rpx;
+                top: 24rpx;
+
+            }
+
+            .pptTitle {
+                height: 100rpx;
+                font-size: 34rpx;
+                color: #484848;
+                font-weight: bold;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+
+
+                .close {}
+            }
+
+            .pptImgBox {
+                // padding: 0 10rpx;
+                display: flex;
+                flex-wrap: wrap;
+
+                .pptImgs {
+
+                    margin: 0 0 10rpx 13rpx;
+                    width: 31%;
+                    height: 150rpx;
+                }
+
+                .active {
+                    border: 2rpx solid #1aad19;
+                }
+            }
+        }
+    }
+
+    .liveEndMask {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #333333;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1000;
+
+        .liveEnd_box {
+            transition: all 1s;
+            width: 640rpx;
+            height: 315rpx;
+            background: #666666;
+            border-radius: 20rpx;
+            position: absolute;
+            top: 43%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40rpx;
+            margin-bottom: 30rpx;
+
+            .littleTips {
+                font-size: 26rpx;
+                color: rgba(255, 255, 255, 0.6) !important;
+            }
+
+            .title {
+                font-size: 32rpx;
+                color: #FFFFFF;
+                margin-top: 20rpx;
+            }
+
+            .content {
+                min-height: 120rpx;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                width: 100%;
+
+                .people_box {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    font-size: 26rpx;
+                    height: 100%;
+                    color: rgba(255, 255, 255, 0.6);
+
+                    .people_font {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    .perple {
+                        margin: 10rpx 0 0 8rpx;
+                    }
+
+                    .heightLine {
+                        display: inline-block;
+                        font-size: 48rpx;
+                        font-weight: 500;
+                        color: #FFFFFF;
+                    }
+
+                    .perple_tips {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+
+                .interval {
+                    width: 4px;
+                    height: 56rpx;
+                    background: #0A9E67;
+                    border-radius: 3px;
+                }
+
+                .time_box {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    font-family: PingFangSC-Medium, PingFang SC;
+                    font-weight: 500;
+                    color: #FFFFFF;
+
+                    .time {
+                        font-size: 48rpx;
+
+                    }
+
+                    .time_tips {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 26rpx;
+                        color: rgba(255, 255, 255, 0.6);
+                    }
+                }
+            }
+        }
+    }
+
+}

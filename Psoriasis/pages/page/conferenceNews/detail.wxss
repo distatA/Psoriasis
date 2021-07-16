@@ -1,0 +1,4 @@
+.richText {
+    padding: 30rpx 15rpx;
+    font-family: PingFangSC-Medium, PingFang SC;
+}

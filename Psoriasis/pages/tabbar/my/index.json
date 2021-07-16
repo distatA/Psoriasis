@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "个人中心",
+  "enablePullDownRefresh": false,
+
+  "usingComponents": {
+    "login": "/components/login/index",
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index",
+    "tabBar": "/components/tabBar/index"
+
+  }
+}

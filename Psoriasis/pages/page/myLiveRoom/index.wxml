@@ -1,0 +1,13 @@
+<view class="container">
+    <view class="liveRoomBox" wx:if="{{list}}">
+        <view class="liveRoom_item" bind:tap="toLive" wx:for="{{list}}" wx:key="index" data-id="{{item.id}}">
+            <view class="liveRoom_top">
+                <view class="liveTime">直播时间: {{item.time_format}}</view>
+                <view class="liveStatus" style="color:{{item.status_color}}">{{item.status}}</view>
+            </view>
+            <view class="liveRoom_title">直播课题: {{item.title}}</view>
+            <view class="liveRoom_type" style="background:{{item.color}}">{{item.type_name}}</view>
+        </view>
+    </view>
+    <van-empty class="custom-image" image="https://img.yzcdn.cn/vant/custom-empty-image.png" description="暂无内容" wx:if="{{list.length === 0}}" />
+</view>

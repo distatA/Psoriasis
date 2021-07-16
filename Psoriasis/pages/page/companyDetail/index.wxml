@@ -1,0 +1,21 @@
+<view class="container" class="richText">
+    <import src="../../../utils/wxParse.wxml" />
+    <!-- 圆弧 -->
+    <image class="semicircle" src="../../../images/rectangle.png" />
+    <!-- 企业名片 -->
+    <view class="company_info">
+        <image class="company_img" src="{{companyDetail.logo}}" />
+        <view class="conpany_detail">
+            <view class="compnay_title">{{companyDetail.name}}</view>
+            <view class="company_detailInfo">
+                <image class="company_detailInfoImg" src="../../../images/icon5.png" />
+                <view class="company_detailInfoFont">{{companyDetail.type_name}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="title" style="padding:0rpx;margin-bottom:10rpx;">
+        <view class="title_interval"></view>
+        <view class="title_font">企业介绍</view>
+    </view>
+    <template is="wxParse" data="{{wxParseData:txtNew.nodes}}" />
+</view>

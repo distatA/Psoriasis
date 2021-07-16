@@ -1,0 +1,45 @@
+<view class="container">
+    <!-- 直播预告 -->
+    <view class="liveForeshow">
+        <view style="min-width: 170rpx;">
+            <title item="直播预告"></title>
+        </view>
+        <view class="swiper">
+            <swiper circular="true" autoplay="true" vertical="true">
+                <swiper-item wx:for="{{notice}}" wx:key="index" class="swiper_item">
+                    <rich-text class="foreshowFont " nodes="{{item.content}}"></rich-text>
+                </swiper-item>
+            </swiper>
+        </view>
+    </view>
+    <!-- 轮播图 -->
+    <view class="banner">
+        <swiper class="indexBanner" indicator-color="#83cdb2" indicator-active-color="#0A9E67" circular="true" indicator-dots="true" autoplay="{{true}}" circular="true" easing-function="linear" current="{{index}}">
+            <swiper-item class="imgBox" wx:for="{{banner}}" wx:key="index">
+                <image class="banner-image" src="{{item.image}}" mode="widthFix" bindtap="toBanner" data-id="{{item.id}}" data-url="{{item.image}}" data-type="{{1}}"></image>
+            </swiper-item>
+        </swiper>
+    </view>
+    <!-- 左侧 -->
+    <view class="eventBox" wx:if="{{list}}">
+        <block wx:for="{{list}}" wx:key="index">
+            <image class="events" src="{{item.cover}}" bind:tap="toLive" data-item="{{item}}" >
+                <!-- <view class="tips">
+                    <view class="liveIng" style="{{item.status === 1 ?'background: #F85F2E;':''}}" wx:if="{{item.status === 1}}">
+                        未开始
+                    </view>
+                    <view class="liveIng" style="{{item.status === 2 ?'background: #0A9E67;':''}}" wx:if="{{item.status === 2}}">
+                        正在直播
+                    </view>
+                    <view class="liveIng" style="{{item.status === 3 ?'background: #1487FF;':''}}" wx:if="{{item.status === 3}}">
+                        回放
+                    </view>
+                    <view class="popularity">{{item.click_num}}人气</view>
+                </view> -->
+            </image>
+        </block>
+    </view>
+    <view wx:if="{{!list}}">
+        <van-empty class="custom-image" image="https://img.yzcdn.cn/vant/custom-empty-image.png" description="暂无内容" />
+    </view>
+</view>

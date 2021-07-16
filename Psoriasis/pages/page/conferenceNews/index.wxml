@@ -1,0 +1,60 @@
+<view class="container">
+    <!-- tab栏 -->
+    <view class="nav">
+        <view class="nav_v" bindtap="setNavTap" data-type="{{1}}">
+            <view class="nav_title {{type ===1 ? 'nav_active': '' }}">最新动态</view>
+            <view class="nav_hr" wx:if="{{type == 1}}"></view>
+        </view>
+        <view class="nav_v" bindtap="setNavTap" data-type="{{2}}">
+            <view class="nav_title {{type ===2 ? 'nav_active': '' }}">媒体报道</view>
+            <view class="nav_hr" wx:if="{{type == 2}}"></view>
+        </view>
+    </view>
+    <!-- 最新动态 -->
+    <view wx:if="{{type === 1}}">
+        <!-- 头部间隔 -->
+        <!-- <view class="meet_new">
+            <block wx:for="{{newList}}" wx:key="index">
+                <view class="news_list" catchtap="goNews" data-id="{{item.id}}">
+                    <view class="list_left">
+                        <view class="news_title2">{{item.title}}</view>
+                    </view>
+                </view>
+            </block>
+        </view> -->
+        <block wx:for="{{newList}}" wx:key="index">
+            <view class="news_t_box" bind:tap="goNews" data-id="{{item.id}}">
+                <view class="news_t">
+                    <view class="news_t_l">
+                        <image src="{{item.cover}}" style="width:100%;height:100%"></image>
+                    </view>
+                    <view class="news_t_r">
+                        <view class="news_t_r_t">{{item.title}}</view>
+                        <view class="news_t_r_b">
+                            <view class="time">{{item.create_time_format}}</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </view>
+    <view wx:if="{{type === 2}}">
+        <block wx:for="{{mediaList}}" wx:key="index">
+            <view class="news_t_box" bind:tap="goNews" data-id="{{item.id}}">
+                <view class="news_t">
+                    <view class="news_t_l">
+                        <image src="{{item.cover}}" style="width:100%;height:100%"></image>
+                    </view>
+                    <view class="news_t_r">
+                        <view class="news_t_r_t">{{item.title}}</view>
+                        <view class="news_t_r_b">
+                            <view class="time">{{item.create_time_format}}</view>
+                            <view class="read">来源: {{item.source}}</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </view>
+    <van-empty class="custom-image" image="https://img.yzcdn.cn/vant/custom-empty-image.png" description="描述文字" wx:if="{{!newList|| !mediaList}}" />
+</view>

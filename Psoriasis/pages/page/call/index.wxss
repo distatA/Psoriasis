@@ -1,0 +1,40 @@
+.container {
+  padding: 40rpx;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  color: #666666;
+}
+.container .pic {
+  margin: 0 auto;
+  width: 225rpx;
+  height: 225rpx;
+}
+.container .font {
+  margin-left: 10rpx;
+  margin-top: 42rpx;
+  min-height: 100rpx;
+}
+.container .detailInfo {
+  margin-top: 100rpx;
+}
+.container .detailInfo .wx {
+  margin-left: 10rpx;
+}
+.container .detailInfo .lineFont {
+  margin-left: 10rpx;
+  color: #0A9E67;
+}
+.container .detailInfo .phone,
+.container .detailInfo .wz {
+  margin-left: 10rpx;
+  display: flex;
+  align-items: center;
+  margin-top: 60rpx;
+}
+.container .detailInfo .email {
+  margin-left: 10rpx;
+  margin-top: 60rpx;
+}

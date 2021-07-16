@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "往届回顾",
+  "enablePullDownRefresh": false,
+
+  "usingComponents": {
+    "title": "../../../components/title/index",
+    "van-image": "@vant/weapp/image/index"
+
+  }
+}

@@ -1,0 +1,107 @@
+<view class="container">
+    <import src="../../../utils/wxParse.wxml" />
+    <!-- 直播跟转播共用 -->
+    <!-- 没有ppt的情况 -->
+    <view class="live" style="{{ppt || turnPPT || video || showCountTime ||stopLive ||pptPlayBack ? 'display:none;':''}}">
+        <live-player src="{{playURL}}" id="player" autoplay bindstatechange="statechange" binderror="error" style="width: 100%; height: 100%;" object-fit="fillCrop" />
+    </view>
+    <!-- 回放 -->
+    <!-- object-fit="fill" -->
+    <view class="live" wx:if="{{video && !pptPlayBack}}">
+        <video class="video" src="{{videoUrl}}"></video>
+    </view>
+    <!-- ppt回放 -->
+    <view class="pptLive" bindtap="showJindu" wx:if="{{pptPlayBack && !video}}">
+        <!-- <image class="PPTimg" src="{{choseImage}}" /> -->
+        <van-image use-loading-slot image-class="PPTimg" src="{{choseImage}}" fit="fill" show-loading="true">
+            <van-loading slot="loading" type="spinner" size="20" vertical>加载中......</van-loading>
+        </van-image>
+        <view class="rightVideo">
+            <video id="myVideo" class="myVideo" controls="{{false}}" autoplay="{{autoPlay}}" initial-time="{{lefttime}}" src="{{videoUrl}}" bindtimeupdate="videoUpdate" bindended="videoEnd" object-fit="fill" bindpause="videoPause" bindplay="videoPlay" show-center-play-btn="{{false}}"></video>
+        </view>
+        <!-- 滚动条 -->
+        <view class="bootomplay-container" wx:if="{{jinduShow}}">
+            <image src="../../../images/startlive.png" class="playicon" bindtap="play" wx:if="{{pause}}"></image>
+            <image src="../../../images/pause.png" class="playicon" wx:else bindtap="pausePlay"></image>
+            <view>{{lefttime}}</view>
+            <slider class="slider" block-size="12" min="0" max="{{durationtime}}" value="12" step="1" value="{{currenttime}}" bindchange="changeSlider"></slider>
+            <view>{{righttime}}</view>
+        </view>
+    </view>
+    <!-- 直播有PPT -->
+    <view class="pptLive" wx:if="{{ppt}}">
+        <van-image use-loading-slot image-class="PPTimg" src="{{choseImage}}" fit="fill">
+            <van-loading slot="loading" type="spinner" size="20" vertical>加载中......</van-loading>
+        </van-image>
+        <view class="rightInfo">
+            <live-player src="{{playURL}}" id="player" autoplay mode="live" object-fit="fillCrop" bindstatechange="statechange" binderror="error" style=" width: 100%; height: 260rpx;" />
+        </view>
+    </view>
+    <!-- 有ppt的回放 -->
+    <!-- 转播有ppt -->
+    <view class="pptLive" wx:if="{{turnPPT}}">
+        <live-player src="{{turnPPTUrl}}" autoplay id="turnPPT" bindstatechange="statechange" binderror="error" class="PPTimg" style="width: 563rpx; height:415rpx;" object-fit="fillCrop" id="textplayer" />
+        <view class="rightInfo">
+            <live-player src="{{turnPPTGeneral}}" id="General" autoplay mode="live" bindstatechange="statechange" binderror="error" style=" width: 100%; height: 260rpx;" object-fit="fillCrop" />
+        </view>
+    </view>
+    <!-- 未开始 -->
+   
+
+    <view class="notStart" wx:if="{{showCountTime && !stopLive}}" style="background-image:url({{liveInfo.background_img}});background-size: cover;">
+        <view class="tipsBox">
+            <view class="tips">直播未开始</view>
+            <view class="tipsTime">
+                距离直播开始还有:
+                <text class="heightline">{{showWait ?  '准备中': liveInfo.count_down }}</text>
+            </view>
+        </view>
+    </view>
+    <!-- 已结束 -->
+    <!-- <view class="notStart" wx:if="{{stopLive && !showCountTime}}">
+        <view class="tipsBox">
+            <view class="tips">直播已结束</view>
+            <view class="tipsTime" style="padding-left:185rpx;">稍后将生成回放</view>
+        </view>
+    </view> -->
+    <view class="end" wx:if="{{stopLive && !showCountTime}}">
+        <view class="endBox">
+            <view class="endTips">直播已结束</view>
+        </view>
+    </view>
+    <!-- tab 栏 -->
+    <view class="nav">
+        <view class="nav_v" bindtap="setNavTap" data-type="{{1}}">
+            <view class="nav_title {{nav ===1 ? 'nav_active': '' }}">活动详情</view>
+            <view class="nav_hr" wx:if="{{nav == 1}}"></view>
+        </view>
+        <view class="nav_v" bindtap="setNavTap" data-type="{{0}}">
+            <view class="nav_title {{nav === 0 ? 'nav_active': '' }}">互动</view>
+            <view class="nav_hr" wx:if="{{nav == 0}}"></view>
+        </view>
+       
+    </view>
+    <!-- 评论区 -->
+    <scroll-view wx:if="{{nav === 0}}" class="review_box" scroll-y="true" scroll-into-view="{{toView}}" wx:key="index" bindrefresherrefresh="bindrefresherrefresh" refresher-enabled refresher-triggered="{{refresher}}">
+        <view class="review_item" wx:for="{{reviewArr}}" id="row_{{index}}" wx:key="index">
+            <image class="img" src="{{item.avatar}}"></image>
+            <view class="reviewFont">
+                <view class="name">{{item.nickname}}</view>
+                <view class="content">{{item.content}}</view>
+            </view>
+        </view>
+        <!-- </view> -->
+    </scroll-view>
+    <!-- <view class="richText"> -->
+    <!-- <rich-text nodes="{{liveInfo.detail}}" wx:if="{{nav === 1}}"></rich-text> -->
+    <view wx:if="{{nav === 1}}" style="padding:0 20rpx;font-size:26rpx;margin-top:5rpx">
+        <template is="wxParse" data="{{wxParseData:txtNew.nodes}}" />
+        <!-- <rich-text nodes="{{liveInfo.detail}}" wx:if="{{nav === 1}}"></rich-text> -->
+    </view>
+    <!-- </view> -->
+    <!-- 隔开 -->
+    <view style="margin-top:20rpx; width: 100%; height: 40rpx;"></view>
+    <view class="input_box" wx:if="{{nav === 0}}">
+        <input type="text" class="input" placeholder="请输入互动信息" value="{{value}}" confirm-type="send" bindconfirm='doSend' />
+    </view>
+</view>

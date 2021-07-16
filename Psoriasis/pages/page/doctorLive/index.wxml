@@ -1,0 +1,75 @@
+<view class="container">
+    <!-- bug盒子 -->
+    <view class="bugBox" wx:if="{{bugBox}}"></view>
+    <view class="flex_end">
+        <view class="teacher_box">
+            <live-pusher id="pusher" url="{{playURL}}" mode="live" bindstatechange="statechange" style="width:100%;height:100%" aspect="3:4"></live-pusher>
+        </view>
+    </view>
+    <!-- ppt -->
+    <view class="ppt-container">
+        <view class="leftarrow" bindtap="prevPPT">
+            <image src="../../../images/pptleft.png" class="lefticon"></image>
+        </view>
+        <view class="ppt_box">
+            <image src="{{choseImage}}" style="width:100%;height:100%" wx:if="{{choseImage}}"></image>
+        </view>
+        <view class="rightarrow" bindtap="nextPPT">
+            <image src="../../../images/pptleft.png" class="lefticon" style=" transform: rotate(180deg);"></image>
+        </view>
+    </view>
+    <!-- 评论 -->
+    <view class="review">
+        <image class="pptLogo" src="../../../images/ppt.png" bind:tap="showPPT" />
+        <scroll-view scroll-y="true" class="reviewBox" scroll-into-view="{{toView}}" bindrefresherrefresh="bindrefresherrefresh" refresher-enabled refresher-triggered="{{refresher}}">
+            <view class="review_item" wx:for="{{reviewArr}}" wx:key="index" id="row_{{index}}">
+                <text>{{item.nickname}}:</text>
+                <text class="heightlight">{{item.content}}</text>
+            </view>
+        </scroll-view>
+    </view>
+    <!-- 弹窗 -->
+    <view class="mask" wx:if="{{showPPT}}">
+        <scroll-view class="pptBox" scroll-y="true">
+            <image class="close" src="../../../images/close_gray.png" bindtap="showPPT" />
+            <view class="pptTitle">PPT讲义</view>
+            <view class="pptImgBox">
+                <image class="pptImgs {{currentIndex === index? 'active' : ''}}" wx:for="{{liveInfo.ppt_url}}" bind:tap="choseImg" data-id="{{item.id}}" src="{{item.url}}" data-url="{{item.url}}" data-index="{{index}}"></image>
+            </view>
+        </scroll-view>
+    </view>
+    <!-- 义诊结束弹窗 -->
+    <view class="liveEndMask" wx:if="{{showLiveEnd}}">
+        <view class="liveEnd_box">
+            <view class="title">直播已结束</view>
+            <view class="littleTips">稍后将生成直播回放</view>
+            <view class="content">
+                <view class="people_box">
+                    <view class="people_font">
+                        <view class="heightLine">{{click_num}}</view>
+                        <view class="perple">人</view>
+                    </view>
+                    <view class="perple_tips">观看人数</view>
+                </view>
+                <view class="interval"></view>
+                <view class="time_box">
+                    <view class="time">{{live_time}}</view>
+                    <view class="time_tips">直播时长</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 底部 -->
+    <view class="bottomBar">
+        <view class="start" wx:if="{{!startLive}}">
+            <image class="" src="../../../images/start.png" />
+            <view class="startFont" bind:tap="startLive">开始直播</view>
+        </view>
+        <view class="start" wx:if="{{startLive}}">
+            <image class="" src="../../../images/end.png" />
+            <view class="startFont" bind:tap="endLive" style="{{startLive ? '' :'color:#FF3F30;'}}">
+                结束直播
+            </view>
+        </view>
+    </view>
+</view>

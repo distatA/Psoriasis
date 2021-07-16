@@ -1,0 +1,16 @@
+<view class="container">
+    <image class="pic" src="{{data.logo}}" />
+    <view class="font">{{data.brief}}</view>
+    <view class="detailInfo">
+        <view class="wx">微信公众账号: {{data.wechat_name}}</view>
+        <view class="phone">
+            联系电话:
+            <view class="lineFont">{{data.phone}}</view>
+        </view>
+        <view class="email">电子邮箱: {{data.email}}</view>
+        <view class="wz">
+            官方网站:
+            <view class="lineFont">{{data.web_site_url}}</view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,295 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+button {
+  padding: 0;
+}
+.box {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.pusher {
+  width: 200rpx;
+  height: 300rpx;
+  position: absolute;
+  top: 40rpx;
+  right: 40rpx;
+  z-index: 3;
+  border: 2px solid white;
+
+}
+
+.player {
+  flex: 1;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  height: 100vh;
+}
+
+
+
+.semicircle {
+  height: calc(352rpx - 176rpx);
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+.lineupTitle {
+  width: 686rpx;
+  height: 149rpx;
+  background: #FFFFFF;
+  box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 32rpx;
+  margin: 40rpx auto;
+  font-size: 32rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lineupTitle .lineupIng {
+  width: 16rpx;
+  height: 16rpx;
+  background: #DCDCDC;
+  border-radius: 50%;
+  margin: 5rpx 15rpx 0rpx 0rpx;
+}
+.lineupIng.activeClass{
+  background: #FF3A58;
+
+}
+.lineupTitle .lineUpFont {
+
+  font-weight: 500;
+  color: #333333;
+
+}
+
+.content {
+  padding: 40rpx;
+  box-sizing: border-box;
+  width: 686rpx;
+  height: 632rpx;
+  background: #FFFFFF;
+  box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 32rpx;
+  margin: 40rpx auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content .lineUpTitle {
+  font-size: 32rpx;
+  color: #333333;
+}
+
+.content .lineUpNum {
+  min-width: 150rpx;
+  min-height: 260rpx;
+  font-size: 80rpx;
+  font-weight: 500;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content .lineUpInfo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.content .infoLeft_P,
+.content .infoRight_M {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 26rpx;
+  font-weight: 500;
+  color: #999999;
+}
+
+.content .infoLeft_tips,
+.content .infoRight_tips {
+  font-size: 26rpx;
+  color: #333333;
+}
+
+.content .infoLeft,
+.content .infoRight {
+  height: 130rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.content .interval {
+  width: 4rpx;
+  height: 56rpx;
+  background: #F1F1F1;
+  border-radius: 3rpx;
+}
+
+.content .lineFont {
+  font-size: 48rpx;
+  font-weight: 500;
+  color: #0A9E67;
+}
+
+.content .lineUpTips {
+  margin-top: 65rpx;
+  font-size: 24rpx;
+  color: #999999;
+}
+
+.btnBox {
+  margin-top: 50rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-size: 32rpx;
+  font-weight: 500;
+}
+
+.btnBox .lineUpBtn {
+  width: 324rpx;
+  height: 96rpx;
+  border: 2rpx solid #0A9E67;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0A9E67;
+  border-radius: 20rpx;
+}
+
+.btnBox .lineUpReset {
+  width: 324rpx;
+  height: 96rpx;
+  background: #CCCCCC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.5);
+  border-radius: 20rpx;
+}
+.lineUpReseton{
+  width: 324rpx;
+  height: 96rpx;
+  background: #0A9E67;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 20rpx;
+}
+
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeOver {
+  width: 640rpx;
+  height: 176rpx;
+  background: #FFFFFF;
+  border-radius: 16rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 34rpx;
+  font-weight: 500;
+  color: #353535;
+}
+
+.timeOver .highlight {
+  color: #0A9E67;
+}
+
+.rtcBox {
+  height: 100vh;
+  background-color: #808080;
+}
+
+ .frame {
+  position: fixed;
+  top: 40rpx;
+  right: 40rpx;
+  width: 216rpx;
+  height: 384rpx;
+  background-color: white;
+}
+
+ .handleBox {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 4;
+}
+
+ .handleBox .time {
+   height:52rpx;
+  padding: 0 20rpx;
+  font-size: 30rpx;
+  color: #FFFFFF;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 26rpx;
+}
+
+ .handleBox .camera {
+  margin: 25rpx 0 20rpx 0;
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+}
+
+ .handleBox .tips {
+  font-size: 26rpx;
+  color: #FFFFFF;
+  margin-bottom: 30rpx;
+}

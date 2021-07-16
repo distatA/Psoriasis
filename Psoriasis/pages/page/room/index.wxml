@@ -1,0 +1,76 @@
+<view class="container">
+	<block wx:if="{{!showRTC}}">
+		<!-- 圆弧 -->
+		<image class="semicircle" src="../../../images/rectangle.png" />
+		<!-- 排队提示 -->
+		<view class="lineupTitle">
+			<view class="lineupIng {{status==1?'activeClass':''}}"></view>
+			<view class="lineUpFont">{{status==1?'正在义诊中':status==2?"义诊已结束":"义诊未开始"}}</view>
+		</view>
+		<!-- 排号 -->
+
+		<view class="content">
+			<view class="lineUpTitle">我的义诊排号</view>
+
+			<view class="lineUpNum" wx:if="{{isOver}}">已结束</view>
+			<block wx:else>
+				<view class="lineUpNum" wx:if="{{isReorder==3}}">已过号</view>
+				<block wx:else>
+					<view class="lineUpNum" wx:if="{{status==1||status==0&&myNumber}}">{{myNumber}}</view>
+					<view class="lineUpNum" wx:else style="color:#000;font-size:30rpx;font-weight:600">——</view>
+				</block>
+			</block>
+
+			<view class="lineUpInfo">
+				<view class="infoLeft">
+					<view class="infoLeft_P">
+						<view class="lineFont" wx:if="{{status==1||status==0||!isOver}}">{{preNum}}</view>
+						<view lass="lineFont" wx:else style="color:#0A9E67;font-weight:600">——</view>
+						人
+					</view>
+					<view class="infoLeft_tips">前方排队人数</view>
+				</view>
+
+				<view class="interval"></view>
+				<view class="infoRight">
+					<view class="infoRight_M">
+					<!-- status 0义诊未开始 1义诊正在进行中 2义诊已结束 -->
+						<view class="lineFont" style="display:flex" wx:if="{{status==1||status==0}}">
+							<image src="../../../images/large.png" style="width:64rpx;height:64rpx" wx:if="{{waitMinute!=0||!isOver}}"></image><text>{{waitMinute}}</text>
+						</view>
+						<view class="lineFont" wx:else style="color:#0A9E67;font-weight:600">——</view>
+						分钟
+					</view>
+					<view class="infoRight_tips">预计等待时长</view>
+				</view>
+			</view>
+			<view class="lineUpTips">请关注微信推送的排号通知,过号需要重新排队</view>
+		</view>
+		<!-- 按钮 -->
+		<view class="btnBox" wx:if="{{!isOver}}">
+			<view class="lineUpBtn" bindtap="cancelWait">取消排队</view>
+			<view class="lineUpReset" wx:if="{{isReorder==0}}">过号重排</view>
+			<view class="lineUpReseton" wx:else bindtap="reorder">过号重排</view>
+
+		</view>
+		<!-- 倒计时弹窗 -->
+		<view class="mask" wx:if="{{showTimeOver}}">
+			<view class="timeOver">
+				义诊即将开始,您已等待
+				<view class="highlight">{{countdown}}秒</view>
+			</view>
+		</view>
+	</block>
+	<block wx:if="{{showRTC}}">
+		<!-- 患者端 -->
+		<view class="box">
+			<live-pusher class="pusher" autopush debug="{{debug}}"  binderror="livePlayerError" wx:if="{{publishPath!==''}}" beauty="{{beauty}}" enable-camera="{{camera}}" min-bitrate="200" max-bitrate="400" mode="RTC" muted="{{!mic}}" url="{{publishPath}}"></live-pusher>
+			<live-player class=" player" wx:key="key" wx:for="{{subscribeList}}" autoplay binderror="livePlayerError" min-cache="0.2" max-cache="0.8" id="{{item.key}}" src="{{item.url}}" mode="RTC" muted="{{!volume}}"></live-player>
+			<view class="handleBox">
+				<view class="time">{{duration}}</view>
+				<image src="../../../images/cmear.png" bind:tap="switchCamera" class="camera"></image>
+				<view class="tips">切换摄像头</view>
+			</view>
+		</view>
+	</block>
+</view>

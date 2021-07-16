@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "直播入口",
+  "enablePullDownRefresh": false,
+
+  "usingComponents": {
+    "van-empty": "@vant/weapp/empty/index",
+    "title": "/components/title/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index"
+  }
+}

@@ -1,0 +1,96 @@
+.semicircle {
+  width: 100%;
+  height: 176rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -999999;
+}
+
+.richText {
+  padding: 30rpx;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-size: 28rpx;
+  color: #333333
+}
+
+.company_info {
+  font-family: PingFangSC-Medium, PingFang SC;
+  margin-top: 40rpx;
+  box-sizing: border-box;
+  padding: 40rpx;
+  width: 686rpx;
+  height: 240rpx;
+  background: #FFFFFF;
+  box-shadow: 2px 1px 20px rgba(0, 0, 0, 0.1);
+  margin: 40rpx auto;
+  border-radius: 20px;
+  display: flex;
+}
+
+.company_info .company_img {
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.company_info .conpany_detail {
+  flex: 1;
+  height: 160rpx;
+  margin-left: 40rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.company_info .conpany_detail .compnay_title {
+  font-size: 32rpx;
+  font-weight: 500;
+  color: #333333;
+  margin-top: 13rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.company_info .conpany_detail .company_detailInfo {
+  display: flex;
+  align-items: center;
+}
+
+.company_info .conpany_detail .company_detailInfo .company_detailInfoImg {
+  min-width: 40rpx;
+  max-width: 40rpx;
+  height: 40rpx;
+
+}
+
+.company_info .conpany_detail .company_detailInfo .company_detailInfoFont {
+  font-size: 24rpx;
+  color: #666666;
+  margin-left: 20rpx;
+}
+
+.title {
+  width: 100%;
+  height: 50rpx;
+  padding: 0 30rpx;
+  display: flex;
+  align-items: center;
+}
+
+.title .title_interval {
+  width: 8rpx;
+  height: 32rpx;
+  background: #0A9E67;
+  border-radius: 8rpx;
+}
+
+.title .title_font {
+  margin-left: 20rpx;
+  font-size: 32rpx;
+  font-family: PingFangSC-Medium, PingFang SC !important;
+  font-weight: 500;
+  color: #333333;
+}

@@ -1,0 +1,88 @@
+<view class="container">
+    <!-- 直播预告 -->
+    <!-- 轮播图 -->
+    <view class="banner">
+        <swiper class="indexBanner" indicator-color="#83cdb2" indicator-active-color="#0A9E67" circular="true" indicator-dots="true" autoplay="{{true}}" circular="true" easing-function="linear" current="{{index}}">
+            <swiper-item class="imgBox" wx:for="{{ad.live}}" wx:key="index">
+                <image class="banner-image" src="{{item.image}}" mode="widthFix" bindtap="toBanner" data-id="{{item.id}}" data-url="{{item.image}}"></image>
+            </swiper-item>
+        </swiper>
+    </view>
+    <!-- 日期tab栏 -->
+    <view class="nav">
+        <view class="nav_v" bindtap="setNavTap" data-index="{{index}}" data-day="{{item.day}}" wx:for="{{tabs}}" wx:key="index">
+            <view class="nav_title {{nav === index ? 'nav_active': '' }}">{{item.day_format}}</view>
+            <view class="nav_hr" wx:if="{{nav === index}}"></view>
+        </view>
+    </view>
+    <!--  -->
+    <view>
+        <view style="margin:40rpx 0rpx 12rpx 0rpx" wx:if="{{main_venue.length !== 0}}">
+            <title item="主会场"></title>
+        </view>
+        <view class="z_conference_item" wx:for="{{main_venue}}" bind:tap="toLive" wx:key="index" data-id="{{item.id}}">
+            <image class="z_conference_img" src="{{item.cover}}">
+                <view class="tips">
+                    <view class="liveIng" style="{{item.status === 1 ?'background: #F85F2E;':''}}" wx:if="{{item.status === 1}}">
+                        未开始
+                    </view>
+                    <view class="liveIng" style="{{item.status === 2 ?'background: #0A9E67;':''}}" wx:if="{{item.status === 2}}">
+                        正在直播
+                    </view>
+                    <view class="liveIng" style="{{item.status === 3 ?'background: #1487FF;':''}}" wx:if="{{item.status === 3}}">
+                        回放
+                    </view>
+                    <view class="popularity">{{item.click_num}}人气</view>
+                </view>
+            </image>
+            <view class="z_conference_itemInfo">
+                <view class="z_conference_itemTitle">{{item.title}}</view>
+                <view class="z_conference_itemSpecial">特邀嘉宾 : {{item.guest}}</view>
+                <view class="z_conference_itemSpecial">
+                    {{item.start_time_format}} - {{item.end_time_format}}
+                </view>
+                <view class="z_conference_itemDetail">
+                    <view></view>
+                    <view>热度:{{item.click_num}}</view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 分会场tab -->
+    <view class="nav">
+        <view class="nav_v" bindtap="setNavFenTap" data-index="{{index}}" wx:for="{{branch_venue}}" wx:key="index">
+            <view class="nav_title {{fenNav === index? 'nav_active': '' }}">{{item.branch}}</view>
+            <view class="nav_hr" wx:if="{{fenNav == index}}"></view>
+        </view>
+    </view>
+    <view class="z_conference_item" wx:for="{{branch_venue[fenNav].list}}" data-id="{{item.id}}" wx:key="id" bind:tap="toLive">
+        <image class="z_conference_img" src="{{item.cover}}" data-id="id">
+            <view class="tips">
+                <view class="liveIng" style="{{item.status === 1 ?'background: #F85F2E;':''}}" wx:if="{{item.status === 1}}">
+                    未开始
+                </view>
+                <view class="liveIng" style="{{item.status === 2 ?'background: #0A9E67;':''}}" wx:if="{{item.status === 2}}">
+                    正在直播
+                </view>
+                <view class="liveIng" style="{{item.status === 3 ?'background: #1487FF;':''}}" wx:if="{{item.status === 3}}">
+                    回放
+                </view>
+                <view class="popularity">{{item.click_num}}人气</view>
+            </view>
+        </image>
+        <view class="z_conference_itemInfo">
+            <view class="z_conference_itemTitle">{{item.title}}</view>
+            <view class="z_conference_itemSpecial">特邀嘉宾 : {{item.guest}}</view>
+            <view class="z_conference_itemSpecial">
+                {{item.start_time_format}} - {{item.end_time_format}}
+            </view>
+            <view class="z_conference_itemDetail">
+                <view></view>
+                <view>热度:{{item.click_num}}</view>
+            </view>
+        </view>
+    </view>
+    <view wx:if="{{main_venue.length ===0 && branch_venue===null}}">
+        <van-empty class="custom-image" image="https://img.yzcdn.cn/vant/custom-empty-image.png" description="暂无内容" />
+    </view>
+</view>

@@ -1,0 +1,69 @@
+.login-back {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.login {
+    width: 600rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 250rpx auto 0 auto;
+    background: #fff;
+    position: relative;
+    padding-bottom: 40rpx;
+    border-radius: 20rpx;
+    line-height: 60rpx;
+}
+
+.login-img {
+    border-radius: 6rpx;
+    padding-top: 60rpx;
+    font-size: 40rpx;
+    font-weight: 500;
+}
+
+.caozuo {
+    color: #575757;
+}
+
+.tupian {
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+    margin-top: 20rpx;
+    margin-bottom: 30rpx;
+}
+
+.zandenglu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.zandenglu button {
+    width: 250rpx !important;
+    margin: 20rpx;
+    font-size: 28rpx;
+    font-weight: 500;
+    border-radius: 40rpx;
+}
+
+.zandenglu .liji {
+    background: red;
+    color: #fff;
+}
+
+.btnNo {
+    background-color: #f8f8f8 !important;
+    color: #000 !important;
+}
+
+.btnGo {
+    background-color: #059d67 !important;
+
+    color: #fff !important;
+}

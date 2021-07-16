@@ -1,0 +1,1700 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"scopeDataCheck": false,
+		"coverView": true,
+		"es6": true,
+		"postcss": true,
+		"compileHotReLoad": false,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"autoAudits": false,
+		"newFeature": true,
+		"uglifyFileName": false,
+		"uploadWithSourceMap": true,
+		"useIsolateContext": true,
+		"nodeModules": true,
+		"enhance": true,
+		"useCompilerModule": true,
+		"userConfirmedUseCompilerModuleSwitch": false,
+		"showShadowRootInWxmlPanel": true,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.12.2",
+	"appid": "wx369dad223dc55fc7",
+	"projectname": "Psoriasis",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/page/conferenceNews/index",
+					"pathName": "pages/page/conferenceNews/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/introduce/index",
+					"pathName": "pages/page/introduce/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/conferenceIntroduce/index",
+					"pathName": "pages/page/conferenceIntroduce/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/retrospect/index",
+					"pathName": "pages/page/retrospect/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tabbar/consultation/index",
+					"pathName": "pages/tabbar/consultation/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/conferenceIntroduce/index",
+					"pathName": "pages/page/conferenceIntroduce/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tabbar/consultation/index",
+					"pathName": "pages/tabbar/consultation/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tabbar/my/index",
+					"pathName": "pages/tabbar/my/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 8,
+					"name": "pages/page/conferenceNews/index",
+					"pathName": "pages/page/room/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tabbar/exhibition/index",
+					"pathName": "pages/tabbar/exhibition/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/famousDoctors/index",
+					"pathName": "pages/page/famousDoctors/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/satellite/index",
+					"pathName": "pages/page/satellite/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/companyDetail/index",
+					"pathName": "pages/page/companyDetail/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/satellite/detail",
+					"pathName": "pages/page/satellite/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/companyDetail/index",
+					"pathName": "pages/page/companyDetail/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/companyDetail/index",
+					"pathName": "pages/page/companyDetail/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/signUp/index",
+					"pathName": "pages/page/signUp/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tabbar/my/index",
+					"pathName": "pages/tabbar/my/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/subscribe/index",
+					"pathName": "pages/page/subscribe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/signUp/index",
+					"pathName": "pages/page/signUp/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/lineUp/index",
+					"pathName": "pages/page/lineUp/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/call/index",
+					"pathName": "pages/page/call/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/subscribe/index",
+					"pathName": "pages/page/subscribe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tabbar/exhibition/index",
+					"pathName": "pages/tabbar/exhibition/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tabbar/exhibition/index",
+					"pathName": "pages/tabbar/exhibition/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/subscribe/index",
+					"pathName": "pages/page/subscribe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/subscribe/index",
+					"pathName": "pages/page/subscribe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/signUp/index",
+					"pathName": "pages/page/signUp/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tabbar/consultation/index",
+					"pathName": "pages/tabbar/consultation/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tabbar/consultation/index",
+					"pathName": "pages/tabbar/consultation/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tabbar/consultation/index",
+					"pathName": "pages/tabbar/consultation/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/viedo/index",
+					"pathName": "pages/page/viedo/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/viedo/index",
+					"pathName": "pages/page/viedo/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/viedo/index",
+					"pathName": "pages/page/viedo/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tabbar/exhibition/index",
+					"pathName": "pages/tabbar/exhibition/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/viedo/index",
+					"pathName": "pages/page/viedo/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/myBubscribe/index",
+					"pathName": "pages/page/myBubscribe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/liveEntrance/index",
+					"pathName": "pages/page/liveEntrance/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/agenda/index",
+					"pathName": "pages/page/agenda/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/viedo/index",
+					"pathName": "pages/page/viedo/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/agenda/index",
+					"pathName": "pages/page/agenda/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/signUp/index",
+					"pathName": "pages/page/signUp/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tabbar/exhibition/index",
+					"pathName": "pages/tabbar/exhibition/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/importantInfrom/index",
+					"pathName": "pages/page/importantInfrom/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tabbar/exhibition/index",
+					"pathName": "pages/tabbar/exhibition/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/viedo/index",
+					"pathName": "pages/page/viedo/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/live/index",
+					"pathName": "pages/page/live/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/viedoSick/index",
+					"pathName": "pages/page/viedoSick/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/lineUp/index",
+					"pathName": "pages/page/lineUp/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/conferenceNews/index",
+					"pathName": "pages/page/conferenceNews/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/agenda/index",
+					"pathName": "pages/page/agenda/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/satellite/index",
+					"pathName": "pages/page/satellite/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/eventsWeek/index",
+					"pathName": "pages/page/eventsWeek/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/doctorLive/index",
+					"pathName": "pages/page/doctorLive/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/viedo/index",
+					"pathName": "pages/page/viedo/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/doctorLive/index",
+					"pathName": "pages/page/doctorLive/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tabbar/consultation/index",
+					"pathName": "pages/tabbar/consultation/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/conferenceNews/detail",
+					"pathName": "pages/page/conferenceNews/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/conferenceNews/index",
+					"pathName": "pages/page/conferenceNews/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/retrospect/index",
+					"pathName": "pages/page/retrospect/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/famousDoctors/index",
+					"pathName": "pages/page/famousDoctors/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tabbar/consultation/index",
+					"pathName": "pages/tabbar/consultation/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/retrospect/index",
+					"pathName": "pages/page/retrospect/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/retrospect/index",
+					"pathName": "pages/page/retrospect/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/call/index",
+					"pathName": "pages/page/call/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/subscribe/index",
+					"pathName": "pages/page/subscribe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/subscribe/index",
+					"pathName": "pages/page/subscribe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/subscribe/index",
+					"pathName": "pages/page/subscribe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/subscribe/index",
+					"pathName": "pages/page/subscribe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/myBubscribe/index",
+					"pathName": "pages/page/myBubscribe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tabbar/exhibition/index",
+					"pathName": "pages/tabbar/exhibition/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/myBubscribe/index",
+					"pathName": "pages/page/myBubscribe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tabbar/exhibition/index",
+					"pathName": "pages/tabbar/exhibition/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/tabber/index",
+					"pathName": "pages/page/tabber/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/live/index",
+					"pathName": "pages/page/live/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tabbar/exhibition/index",
+					"pathName": "pages/tabbar/exhibition/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/famousDoctors/detail",
+					"pathName": "pages/page/famousDoctors/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/famousDoctors/index",
+					"pathName": "pages/page/famousDoctors/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/doctorLive/index",
+					"pathName": "pages/page/doctorLive/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/agenda/index",
+					"pathName": "pages/page/agenda/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/doctorLive/index",
+					"pathName": "pages/page/doctorLive/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tabbar/consultation/index",
+					"pathName": "pages/tabbar/consultation/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/viedoSick/index",
+					"pathName": "pages/page/viedoSick/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/live/index",
+					"pathName": "pages/page/live/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/doctorLive/index",
+					"pathName": "pages/page/doctorLive/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/signUp/index",
+					"pathName": "pages/page/signUp/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/signUp/index",
+					"pathName": "pages/page/signUp/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/subscribe/index",
+					"pathName": "pages/page/subscribe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tabbar/index/index",
+					"pathName": "pages/tabbar/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/test/index",
+					"pathName": "pages/page/test/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/subscribe/index",
+					"pathName": "pages/page/subscribe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/subscribe/index",
+					"pathName": "pages/page/subscribe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tabbar/consultation/index",
+					"pathName": "pages/tabbar/consultation/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/doctorLive/index",
+					"pathName": "pages/page/doctorLive/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/viedoSick/index",
+					"pathName": "pages/page/viedoSick/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/live/index",
+					"pathName": "pages/page/live/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/eventsWeek/index",
+					"pathName": "pages/page/eventsWeek/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/live/index",
+					"pathName": "pages/page/live/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/liveEntrance/index",
+					"pathName": "pages/page/liveEntrance/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/live/index",
+					"pathName": "pages/page/live/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/liveEntrance/index",
+					"pathName": "pages/page/liveEntrance/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/live/index",
+					"pathName": "pages/page/live/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/liveEntrance/index",
+					"pathName": "pages/page/liveEntrance/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 103,
+					"name": "pages/page/test/index",
+					"pathName": "pages/page/test/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/satellite/index",
+					"pathName": "pages/page/satellite/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/liveEntrance/index",
+					"pathName": "pages/page/liveEntrance/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/eventsWeek/index",
+					"pathName": "pages/page/eventsWeek/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/liveEntrance/index",
+					"pathName": "pages/page/liveEntrance/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/satellite/index",
+					"pathName": "pages/page/satellite/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/conferenceNews/index",
+					"pathName": "pages/page/conferenceNews/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/myLiveRoom/index",
+					"pathName": "pages/page/myLiveRoom/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/myLiveRoom/index",
+					"pathName": "pages/page/myLiveRoom/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/doctorLive/index",
+					"pathName": "pages/page/doctorLive/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/eventsWeek/index",
+					"pathName": "pages/page/eventsWeek/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/satellite/index",
+					"pathName": "pages/page/satellite/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/liveEntrance/index",
+					"pathName": "pages/page/liveEntrance/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/eventsWeek/index",
+					"pathName": "pages/page/eventsWeek/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/doctorLive/index",
+					"pathName": "pages/page/doctorLive/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/live/index",
+					"pathName": "pages/page/live/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/liveEntrance/index",
+					"pathName": "pages/page/liveEntrance/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/binding/index",
+					"pathName": "pages/page/binding/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/liveEntrance/index",
+					"pathName": "pages/page/liveEntrance/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/haiBao/index",
+					"pathName": "pages/page/haiBao/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tabbar/my/index",
+					"pathName": "pages/tabbar/my/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/myLiveRoom/index",
+					"pathName": "pages/page/myLiveRoom/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/myLiveRoom/index",
+					"pathName": "pages/page/myLiveRoom/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/liveEntrance/index",
+					"pathName": "pages/page/liveEntrance/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/myLiveRoom/index",
+					"pathName": "pages/page/myLiveRoom/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/myLiveRoom/index",
+					"pathName": "pages/page/myLiveRoom/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/liveEntrance/index",
+					"pathName": "pages/page/liveEntrance/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/myLiveRoom/index",
+					"pathName": "pages/page/myLiveRoom/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/lineUp/index",
+					"pathName": "pages/page/lineUp/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/lineUp/index",
+					"pathName": "pages/page/lineUp/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tabbar/exhibition/index",
+					"pathName": "pages/tabbar/exhibition/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/lineUp/index",
+					"pathName": "pages/page/lineUp/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/exhibitionNotice/index",
+					"pathName": "pages/page/exhibitionNotice/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tabbar/exhibition/index",
+					"pathName": "pages/tabbar/exhibition/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/liveEntrance/index",
+					"pathName": "pages/page/liveEntrance/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tabbar/exhibition/index",
+					"pathName": "pages/tabbar/exhibition/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/test/index",
+					"pathName": "pages/page/test/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/lineUp/index",
+					"pathName": "pages/page/lineUp/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/lineUp/index",
+					"pathName": "pages/page/lineUp/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/lineUp/index",
+					"pathName": "pages/page/lineUp/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/room/index",
+					"pathName": "pages/page/room/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/room/index",
+					"pathName": "pages/page/room/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/test/index",
+					"pathName": "pages/page/test/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/live/index",
+					"pathName": "pages/page/live/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/liveEntrance/index",
+					"pathName": "pages/page/liveEntrance/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/videoTest/index",
+					"pathName": "pages/page/videoTest/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/eventsWeek/index",
+					"pathName": "pages/page/eventsWeek/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/videoTest/index",
+					"pathName": "pages/page/videoTest/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/test/index",
+					"pathName": "pages/page/test/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/live/index",
+					"pathName": "pages/page/live/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/test/index",
+					"pathName": "pages/page/test/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/live/index",
+					"pathName": "pages/page/live/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/test/index",
+					"pathName": "pages/page/test/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/live/index",
+					"pathName": "pages/page/live/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/subscribe/index",
+					"pathName": "pages/page/subscribe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/liveEntrance/index",
+					"pathName": "pages/page/liveEntrance/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/liveEntrance/index",
+					"pathName": "pages/page/liveEntrance/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/test/index",
+					"pathName": "pages/page/test/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/signUp/index",
+					"pathName": "pages/page/signUp/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/subscribe/index",
+					"pathName": "pages/page/subscribe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/subscribe/index",
+					"pathName": "pages/page/subscribe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/signUp/index",
+					"pathName": "pages/page/signUp/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/subscribe/index",
+					"pathName": "pages/page/subscribe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/signUp/index",
+					"pathName": "pages/page/signUp/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/liveEntrance/index",
+					"pathName": "pages/page/liveEntrance/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/liveEntrance/index",
+					"pathName": "pages/page/liveEntrance/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/retrospect/index",
+					"pathName": "pages/page/retrospect/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/test/index",
+					"pathName": "pages/page/test/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/liveEntrance/index",
+					"pathName": "pages/page/liveEntrance/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/test/index",
+					"pathName": "pages/page/test/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/test/index",
+					"pathName": "pages/page/test/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/subscribe/index",
+					"pathName": "pages/page/subscribe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/test/index",
+					"pathName": "pages/page/test/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/productDetail/index",
+					"pathName": "pages/page/productDetail/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/subscribe/index",
+					"pathName": "pages/page/subscribe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/signUp/index",
+					"pathName": "pages/page/signUp/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/subscribe/index",
+					"pathName": "pages/page/subscribe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/subscribe/index",
+					"pathName": "pages/page/subscribe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/famousDoctors/detail",
+					"pathName": "pages/page/famousDoctors/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/retrospect/index",
+					"pathName": "pages/page/retrospect/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/retrospect/index",
+					"pathName": "pages/page/retrospect/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/agenda/index",
+					"pathName": "pages/page/agenda/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/agenda/index",
+					"pathName": "pages/page/agenda/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/subscribe/index",
+					"pathName": "pages/page/subscribe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/subscribeBook/index",
+					"pathName": "pages/page/subscribeBook/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/subscribe/index",
+					"pathName": "pages/page/subscribe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/agenda/index",
+					"pathName": "pages/page/agenda/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/eventsWeek/index",
+					"pathName": "pages/page/eventsWeek/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/liveEntrance/index",
+					"pathName": "pages/page/liveEntrance/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/retrospect/index",
+					"pathName": "pages/page/retrospect/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/agenda/index",
+					"pathName": "pages/page/agenda/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/famousDoctors/index",
+					"pathName": "pages/page/famousDoctors/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/subscribeBook/index",
+					"pathName": "pages/page/subscribeBook/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/subscribe/index",
+					"pathName": "pages/page/subscribe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/subscribe/index",
+					"pathName": "pages/page/subscribe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/binding/index",
+					"pathName": "pages/page/binding/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/agenda/index",
+					"pathName": "pages/page/agenda/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/subscribe/index",
+					"pathName": "pages/page/subscribe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/binding/index",
+					"pathName": "pages/page/binding/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/subscribe/index",
+					"pathName": "pages/page/subscribe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/liveEntrance/index",
+					"pathName": "pages/page/liveEntrance/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/viedo/index",
+					"pathName": "pages/page/viedo/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tabbar/exhibition/index",
+					"pathName": "pages/tabbar/exhibition/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/subscribe/index",
+					"pathName": "pages/page/subscribe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/room/index",
+					"pathName": "pages/page/room/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/subscribe/index",
+					"pathName": "pages/page/subscribe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/liveEntrance/index",
+					"pathName": "pages/page/liveEntrance/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/getUserPhone/index",
+					"pathName": "pages/page/getUserPhone/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/liveEntrance/index",
+					"pathName": "pages/page/liveEntrance/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/famousDoctors/index",
+					"pathName": "pages/page/famousDoctors/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/myLiveRoom/index",
+					"pathName": "pages/page/myLiveRoom/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/eventsWeek/index",
+					"pathName": "pages/page/eventsWeek/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/subscribe/index",
+					"pathName": "pages/page/subscribe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/satellite/index",
+					"pathName": "pages/page/satellite/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/tabbar/index/index",
+					"pathName": "pages/tabbar/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/retrospect/index",
+					"pathName": "pages/page/retrospect/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/liveEntrance/index",
+					"pathName": "pages/page/liveEntrance/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/retrospect/index",
+					"pathName": "pages/page/retrospect/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/liveEntrance/index",
+					"pathName": "pages/page/liveEntrance/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/famousDoctors/index",
+					"pathName": "pages/page/famousDoctors/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/test",
+					"pathName": "pages/page/test",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/test/index",
+					"pathName": "pages/page/test/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/subscribe/index",
+					"pathName": "pages/page/subscribe/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/lineUp/index",
+					"pathName": "pages/page/lineUp/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/liveEntrance/index",
+					"pathName": "pages/page/liveEntrance/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/agenda/index",
+					"pathName": "pages/page/agenda/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/liveEntrance/index",
+					"pathName": "pages/page/liveEntrance/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/agenda/index",
+					"pathName": "pages/page/agenda/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/live/index",
+					"pathName": "pages/page/live/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/page/moments/index",
+					"pathName": "pages/page/moments/index",
+					"scene": null
+				}
+			]
+		}
+	}
+}
